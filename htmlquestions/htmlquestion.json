@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "What is HTML and why is it used in web development?",
+    "slug": "what-is-html-and-why-is-it-used-in-web-development",
+    "answer": "HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages. It provides the basic structure of a website using elements such as headings, paragraphs, images, links, forms, and tables. Every webpage on the internet is built using HTML."
+  },
+  {
+    "id": 2,
+    "question": "What are the basic components of an HTML document?",
+    "slug": "what-are-the-basic-components-of-an-html-document",
+    "answer": "The basic components of an HTML document are <!DOCTYPE html>, <html>, <head>, <title>, and <body>. The head section contains metadata and resources, while the body contains the visible content displayed in the browser."
+  },
+  {
+    "id": 3,
+    "question": "What is the difference between HTML4 and HTML5?",
+    "slug": "what-is-the-difference-between-html4-and-html5",
+    "answer": "HTML5 introduced semantic elements like header, footer, article, and section. It also added native support for audio, video, canvas, local storage, geolocation, and improved form controls. HTML4 relied more on external plugins and non-semantic structures."
+  },
+  {
+    "id": 4,
+    "question": "What is the purpose of the <!DOCTYPE html> declaration?",
+    "slug": "what-is-the-purpose-of-the-doctype-html-declaration",
+    "answer": "The <!DOCTYPE html> declaration informs the browser that the document follows the HTML5 standard. It ensures the browser renders the page in standards mode rather than quirks mode."
+  },
+  {
+    "id": 5,
+    "question": "What are semantic HTML elements?",
+    "slug": "what-are-semantic-html-elements",
+    "answer": "Semantic HTML elements clearly describe the meaning and purpose of the content they contain. Examples include header, footer, nav, article, section, and aside. They improve readability, accessibility, and SEO."
+  },
+  {
+    "id": 6,
+    "question": "Why are semantic tags important for SEO and accessibility?",
+    "slug": "why-are-semantic-tags-important-for-seo-and-accessibility",
+    "answer": "Semantic tags help search engines understand the structure and importance of content, improving SEO. They also assist screen readers and accessibility tools in interpreting webpage content more accurately."
+  },
+  {
+    "id": 7,
+    "question": "What is the difference between div and span?",
+    "slug": "what-is-the-difference-between-div-and-span",
+    "answer": "A div is a block-level element that occupies the full width available and starts on a new line. A span is an inline element that only occupies the space required by its content and does not start on a new line."
+  },
+  {
+    "id": 8,
+    "question": "What is the difference between block-level and inline elements?",
+    "slug": "what-is-the-difference-between-block-level-and-inline-elements",
+    "answer": "Block-level elements start on a new line and occupy the entire available width. Examples include div, p, and h1. Inline elements remain within the current line and only occupy the necessary space. Examples include span, a, and strong."
+  },
+  {
+    "id": 9,
+    "question": "What are HTML attributes?",
+    "slug": "what-are-html-attributes",
+    "answer": "HTML attributes provide additional information about elements. They are specified in the opening tag as name-value pairs. Examples include id, class, href, src, alt, and title."
+  },
+  {
+    "id": 10,
+    "question": "What is the difference between id and class attributes?",
+    "slug": "what-is-the-difference-between-id-and-class-attributes",
+    "answer": "An id uniquely identifies a single element within a webpage and should not be reused. A class can be assigned to multiple elements and is commonly used for styling and grouping related elements."
+  },
+   {
+    "id": 11,
+    "question": "What are global attributes in HTML?",
+    "slug": "what-are-global-attributes-in-html",
+    "answer": "Global attributes are attributes that can be applied to almost all HTML elements. Examples include id, class, style, title, hidden, lang, tabindex, and data-* attributes. They provide additional information or behavior regardless of the element type."
+  },
+  {
+    "id": 12,
+    "question": "What is the purpose of the data-* attribute?",
+    "slug": "what-is-the-purpose-of-the-data-attribute",
+    "answer": "The data-* attribute is used to store custom data directly on HTML elements. This data can be accessed and manipulated using JavaScript without affecting the presentation or structure of the document."
+  },
+  {
+    "id": 13,
+    "question": "What is the difference between section, article, and div?",
+    "slug": "what-is-the-difference-between-section-article-and-div",
+    "answer": "A section represents a thematic grouping of content. An article represents self-contained content that can stand independently, such as a blog post or news article. A div is a generic container with no semantic meaning and is mainly used for styling and layout purposes."
+  },
+  {
+    "id": 14,
+    "question": "What is the purpose of header, main, and footer tags?",
+    "slug": "what-is-the-purpose-of-header-main-and-footer-tags",
+    "answer": "The header element contains introductory content such as logos, navigation, or page titles. The main element contains the primary content of the page. The footer element contains information such as copyright notices, contact details, and related links."
+  },
+  {
+    "id": 15,
+    "question": "What is the difference between strong and b?",
+    "slug": "what-is-the-difference-between-strong-and-b",
+    "answer": "Both elements typically render text in bold. However, strong has semantic meaning and indicates that the content is of strong importance, while b is purely a visual styling element without semantic significance."
+  },
+  {
+    "id": 16,
+    "question": "What is the difference between em and i?",
+    "slug": "what-is-the-difference-between-em-and-i",
+    "answer": "Both elements typically render text in italics. The em element adds semantic emphasis to the content, while the i element is used only for stylistic purposes without conveying additional meaning."
+  },
+  {
+    "id": 17,
+    "question": "What are self-closing (void) elements in HTML?",
+    "slug": "what-are-self-closing-void-elements-in-html",
+    "answer": "Void elements are HTML elements that do not require a closing tag because they cannot contain content. Examples include img, br, hr, input, meta, link, and source."
+  },
+  {
+    "id": 18,
+    "question": "What are the commonly used HTML5 semantic tags?",
+    "slug": "what-are-the-commonly-used-html5-semantic-tags",
+    "answer": "Common HTML5 semantic tags include header, nav, main, section, article, aside, footer, figure, figcaption, details, and summary. These elements help describe the structure and meaning of webpage content."
+  },
+  {
+    "id": 19,
+    "question": "What is the purpose of the meta tag?",
+    "slug": "what-is-the-purpose-of-the-meta-tag",
+    "answer": "The meta tag provides metadata about the HTML document. It is commonly used to define character encoding, viewport settings, page descriptions, keywords, authorship information, and instructions for search engines."
+  },
+  {
+    "id": 20,
+    "question": "What is the difference between name and http-equiv attributes in meta tags?",
+    "slug": "what-is-the-difference-between-name-and-http-equiv-in-meta-tags",
+    "answer": "The name attribute provides metadata such as description, keywords, author, and viewport information. The http-equiv attribute simulates HTTP response headers and is used for browser-related instructions such as content type, refresh intervals, and caching behavior."
+  },
+    {
+    "id": 21,
+    "question": "What is the viewport meta tag and why is it important?",
+    "slug": "what-is-the-viewport-meta-tag-and-why-is-it-important",
+    "answer": "The viewport meta tag controls how a webpage is displayed on different devices. It helps create responsive designs by instructing the browser to match the page width to the device width. A common example is: <meta name='viewport' content='width=device-width, initial-scale=1.0'>."
+  },
+  {
+    "id": 22,
+    "question": "What is the difference between absolute and relative URLs?",
+    "slug": "what-is-the-difference-between-absolute-and-relative-urls",
+    "answer": "An absolute URL contains the complete web address including the protocol and domain name, such as https://example.com/about. A relative URL specifies the path relative to the current page, such as /about or pages/about.html."
+  },
+  {
+    "id": 23,
+    "question": "What is the purpose of the base tag?",
+    "slug": "what-is-the-purpose-of-the-base-tag",
+    "answer": "The base tag specifies a default URL and target for all relative URLs in a document. It helps reduce repetition when multiple links share the same base path."
+  },
+  {
+    "id": 24,
+    "question": "What is the difference between link and a tags?",
+    "slug": "what-is-the-difference-between-link-and-a-tags",
+    "answer": "The link tag is used inside the head section to connect external resources such as CSS files, icons, and fonts. The a tag is used within the body to create hyperlinks that users can click to navigate between pages or resources."
+  },
+  {
+    "id": 25,
+    "question": "How do you create a hyperlink that opens in a new tab?",
+    "slug": "how-do-you-create-a-hyperlink-that-opens-in-a-new-tab",
+    "answer": "A hyperlink can be opened in a new tab using the target='_blank' attribute. For security, it is recommended to also include rel='noopener noreferrer'. Example: <a href='https://example.com' target='_blank' rel='noopener noreferrer'>Visit Site</a>."
+  },
+  {
+    "id": 26,
+    "question": "What is the difference between ordered, unordered, and description lists?",
+    "slug": "what-is-the-difference-between-ordered-unordered-and-description-lists",
+    "answer": "An ordered list (ol) displays items in a numbered sequence. An unordered list (ul) displays items using bullets. A description list (dl) is used for terms and their descriptions using dt and dd elements."
+  },
+  {
+    "id": 27,
+    "question": "What is the difference between table and CSS Grid/Flexbox for layouts?",
+    "slug": "what-is-the-difference-between-table-and-css-grid-or-flexbox-for-layouts",
+    "answer": "Tables are designed for displaying tabular data consisting of rows and columns. CSS Grid and Flexbox are layout systems specifically designed for building responsive webpage layouts. Modern web development recommends using Grid and Flexbox for layouts and tables only for actual data representation."
+  },
+  {
+    "id": 28,
+    "question": "What are rowspan and colspan in HTML tables?",
+    "slug": "what-are-rowspan-and-colspan-in-html-tables",
+    "answer": "The rowspan attribute allows a table cell to span multiple rows, while the colspan attribute allows a table cell to span multiple columns. These attributes are used to create complex table structures."
+  },
+  {
+    "id": 29,
+    "question": "What is the purpose of thead, tbody, and tfoot elements?",
+    "slug": "what-is-the-purpose-of-thead-tbody-and-tfoot-elements",
+    "answer": "The thead element groups table header content, tbody groups the main table data, and tfoot groups summary or footer content. These elements improve readability, maintainability, accessibility, and browser rendering of tables."
+  },
+  {
+    "id": 30,
+    "question": "What is the difference between GET and POST methods in HTML forms?",
+    "slug": "what-is-the-difference-between-get-and-post-methods-in-html-forms",
+    "answer": "The GET method sends form data through the URL as query parameters and is generally used for retrieving data. The POST method sends data in the request body and is used for creating or updating data. POST is more secure for sensitive information because the data is not exposed in the URL."
+  },
+   {
+    "id": 31,
+    "question": "What are the different input types available in HTML5?",
+    "slug": "what-are-the-different-input-types-available-in-html5",
+    "answer": "HTML5 provides several input types including text, password, email, number, tel, url, search, date, time, datetime-local, month, week, color, range, checkbox, radio, file, hidden, submit, reset, and button. These specialized input types improve user experience and enable built-in browser validation."
+  },
+  {
+    "id": 32,
+    "question": "What is the difference between readonly and disabled attributes?",
+    "slug": "what-is-the-difference-between-readonly-and-disabled-attributes",
+    "answer": "A readonly field cannot be edited by the user, but its value is still submitted with the form. A disabled field cannot be edited, cannot receive focus, and its value is not included when the form is submitted."
+  },
+  {
+    "id": 33,
+    "question": "What is the difference between required, pattern, and maxlength validations?",
+    "slug": "what-is-the-difference-between-required-pattern-and-maxlength-validations",
+    "answer": "The required attribute ensures that a field must contain a value before form submission. The pattern attribute validates input against a regular expression. The maxlength attribute restricts the maximum number of characters a user can enter into a field."
+  },
+  {
+    "id": 34,
+    "question": "What is the purpose of the label element?",
+    "slug": "what-is-the-purpose-of-the-label-element",
+    "answer": "The label element provides a descriptive caption for a form control. It improves accessibility by helping screen readers identify form fields and allows users to click the label to focus or activate the associated input element."
+  },
+  {
+    "id": 35,
+    "question": "How do you associate a label with a form control?",
+    "slug": "how-do-you-associate-a-label-with-a-form-control",
+    "answer": "A label can be associated with a form control using the for attribute, which matches the id of the input element. Example: <label for='email'>Email</label> <input id='email' type='email'>. Alternatively, the input can be nested inside the label element."
+  },
+  {
+    "id": 36,
+    "question": "What is the difference between button and input type='button'?",
+    "slug": "what-is-the-difference-between-button-and-input-type-button",
+    "answer": "The button element can contain text, icons, images, and other HTML content, making it more flexible. The input type='button' element can only display plain text through its value attribute. Therefore, the button element is generally preferred in modern web development."
+  },
+  {
+    "id": 37,
+    "question": "What is the default type of a button element?",
+    "slug": "what-is-the-default-type-of-a-button-element",
+    "answer": "The default type of a button element is 'submit'. If a button is placed inside a form and no type is specified, clicking it will submit the form. To prevent form submission, use type='button'."
+  },
+  {
+    "id": 38,
+    "question": "What is the purpose of the autocomplete attribute?",
+    "slug": "what-is-the-purpose-of-the-autocomplete-attribute",
+    "answer": "The autocomplete attribute allows browsers to automatically fill form fields based on previously entered user information. It improves user experience by reducing typing effort and speeding up form completion."
+  },
+  {
+    "id": 39,
+    "question": "What are HTML5 form validation features?",
+    "slug": "what-are-html5-form-validation-features",
+    "answer": "HTML5 provides built-in form validation through attributes such as required, pattern, minlength, maxlength, min, max, step, type='email', and type='url'. These features allow browsers to validate user input before form submission without requiring JavaScript."
+  },
+  {
+    "id": 40,
+    "question": "What is the purpose of the canvas element?",
+    "slug": "what-is-the-purpose-of-the-canvas-element",
+    "answer": "The canvas element provides a drawable area that allows JavaScript to render graphics dynamically. It is commonly used for charts, games, animations, image manipulation, and real-time visualizations."
+  },
+    {
+    "id": 41,
+    "question": "What is the difference between canvas and SVG?",
+    "slug": "what-is-the-difference-between-canvas-and-svg",
+    "answer": "Canvas is a pixel-based drawing surface that uses JavaScript to render graphics and is ideal for games, animations, and real-time rendering. SVG (Scalable Vector Graphics) is vector-based and represents graphics as XML elements, making it scalable without losing quality. Canvas performs better for complex animations, while SVG is better for diagrams, icons, and interactive graphics."
+  },
+  {
+    "id": 42,
+    "question": "What is the purpose of audio and video elements?",
+    "slug": "what-is-the-purpose-of-audio-and-video-elements",
+    "answer": "The audio and video elements allow developers to embed multimedia content directly into web pages without requiring third-party plugins. They provide built-in controls for playing, pausing, seeking, adjusting volume, and displaying media."
+  },
+  {
+    "id": 43,
+    "question": "What are the advantages of HTML5 multimedia elements over plugins?",
+    "slug": "what-are-the-advantages-of-html5-multimedia-elements-over-plugins",
+    "answer": "HTML5 multimedia elements eliminate the need for external plugins such as Flash. They offer better performance, improved security, cross-browser compatibility, mobile device support, accessibility features, and easier integration with JavaScript and CSS."
+  },
+  {
+    "id": 44,
+    "question": "What is lazy loading in HTML?",
+    "slug": "what-is-lazy-loading-in-html",
+    "answer": "Lazy loading is a performance optimization technique that delays loading non-critical resources, such as images and iframes, until they are needed. This reduces the initial page load time and improves overall website performance."
+  },
+  {
+    "id": 45,
+    "question": "What is the purpose of the loading='lazy' attribute?",
+    "slug": "what-is-the-purpose-of-the-loading-lazy-attribute",
+    "answer": "The loading='lazy' attribute instructs the browser to defer loading images or iframes until they are close to entering the viewport. This reduces bandwidth usage and improves page loading speed."
+  },
+  {
+    "id": 46,
+    "question": "What is accessibility (A11Y) in HTML?",
+    "slug": "what-is-accessibility-a11y-in-html",
+    "answer": "Accessibility, often abbreviated as A11Y, refers to designing web applications that can be used by everyone, including people with disabilities. It involves using semantic HTML, proper labels, keyboard navigation, sufficient color contrast, and screen-reader-friendly content."
+  },
+  {
+    "id": 47,
+    "question": "What are ARIA attributes and why are they used?",
+    "slug": "what-are-aria-attributes-and-why-are-they-used",
+    "answer": "ARIA (Accessible Rich Internet Applications) attributes provide additional information to assistive technologies when standard HTML semantics are not sufficient. Examples include aria-label, aria-hidden, aria-expanded, and aria-describedby. They improve accessibility for users relying on screen readers."
+  },
+  {
+    "id": 48,
+    "question": "What is the difference between localStorage, sessionStorage, and cookies?",
+    "slug": "what-is-the-difference-between-localstorage-sessionstorage-and-cookies",
+    "answer": "localStorage stores data permanently until it is manually removed and is shared across browser tabs of the same origin. sessionStorage stores data only for the current browser tab and is cleared when the tab is closed. Cookies are small pieces of data that can be sent to the server with every HTTP request and can have expiration dates."
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of the defer and async attributes in script tags?",
+    "slug": "what-is-the-purpose-of-the-defer-and-async-attributes-in-script-tags",
+    "answer": "Both async and defer allow scripts to be downloaded without blocking HTML parsing. Async executes the script immediately after it is downloaded, which may interrupt HTML parsing and does not guarantee execution order. Defer downloads scripts in parallel but executes them only after HTML parsing is complete, preserving their order in the document."
+  },
+  {
+    "id": 50,
+    "question": "How does the browser parse and render an HTML document?",
+    "slug": "how-does-the-browser-parse-and-render-an-html-document",
+    "answer": "The browser first downloads the HTML document and parses it into the DOM (Document Object Model). It then downloads and processes CSS to create the CSSOM (CSS Object Model). The DOM and CSSOM are combined to create the Render Tree. Next, the browser performs layout calculations to determine element positions and sizes. Finally, it paints pixels on the screen and continuously updates the page as changes occur through user interactions or JavaScript."
+  }
+]

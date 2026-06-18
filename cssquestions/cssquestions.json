@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "What is CSS?",
+    "slug": "what-is-css",
+    "answer": "CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation and appearance of HTML elements on a web page. It allows developers to apply colors, fonts, spacing, layouts, animations, and responsive designs. CSS helps separate content (HTML) from presentation, making websites easier to maintain and update."
+  },
+  {
+    "id": 2,
+    "question": "What are the different ways to apply CSS?",
+    "slug": "what-are-the-different-ways-to-apply-css",
+    "answer": "There are three ways to apply CSS: Inline CSS, Internal CSS, and External CSS. Inline CSS is written directly inside an HTML element using the style attribute. Internal CSS is written inside a <style> tag within the HTML document. External CSS is written in a separate .css file and linked using the <link> tag. External CSS is the most preferred approach because it improves maintainability and reusability."
+  },
+  {
+    "id": 3,
+    "question": "What is the difference between Inline, Internal, and External CSS?",
+    "slug": "what-is-the-difference-between-inline-internal-and-external-css",
+    "answer": "Inline CSS applies styles directly to a specific HTML element and has the highest specificity among the three methods. Internal CSS is written within the same HTML file and affects only that page. External CSS is stored in a separate file and can be reused across multiple pages. External CSS is generally preferred for large applications because it keeps styling organized and maintainable."
+  },
+  {
+    "id": 4,
+    "question": "What are the advantages of External CSS?",
+    "slug": "what-are-the-advantages-of-external-css",
+    "answer": "External CSS improves code maintainability by keeping styles separate from HTML. It allows the same stylesheet to be reused across multiple pages, reducing code duplication. Browsers can cache CSS files, improving website performance. It also makes collaboration easier because developers can work on styling independently from HTML structure."
+  },
+  {
+    "id": 5,
+    "question": "What is the difference between id and class?",
+    "slug": "what-is-the-difference-between-id-and-class",
+    "answer": "An id uniquely identifies a single HTML element on a page, while a class can be applied to multiple elements. An element should have only one unique id, but it can have multiple classes. In CSS specificity, id selectors have higher priority than class selectors. IDs are commonly used for unique sections, while classes are used for reusable styles."
+  },
+  {
+    "id": 6,
+    "question": "What is the CSS Box Model?",
+    "slug": "what-is-the-css-box-model",
+    "answer": "The CSS Box Model describes how every HTML element is rendered as a rectangular box. It consists of four parts: Content, Padding, Border, and Margin. The content contains the actual text or element data. Padding creates space inside the border, border surrounds the padding and content, and margin creates space outside the element. Understanding the box model is essential for controlling layouts and spacing."
+  },
+  {
+    "id": 7,
+    "question": "What is the difference between content-box and border-box?",
+    "slug": "what-is-the-difference-between-content-box-and-border-box",
+    "answer": "In content-box, the width and height only include the content area, while padding and border are added outside the specified dimensions. In border-box, the width and height include content, padding, and border. The border-box model is commonly used because it makes sizing elements more predictable and simplifies layout calculations."
+  },
+  {
+    "id": 8,
+    "question": "What is CSS Specificity?",
+    "slug": "what-is-css-specificity",
+    "answer": "CSS Specificity is the set of rules browsers use to determine which CSS declaration should be applied when multiple selectors target the same element. Selectors with higher specificity override those with lower specificity. Generally, inline styles have the highest specificity, followed by IDs, classes, attributes, pseudo-classes, and finally element selectors."
+  },
+  {
+    "id": 9,
+    "question": "How is CSS Specificity calculated?",
+    "slug": "how-is-css-specificity-calculated",
+    "answer": "Specificity is calculated based on selector types. Inline styles have the highest value. ID selectors are counted next, followed by classes, attributes, and pseudo-classes, and then element selectors and pseudo-elements. For example, #header has higher specificity than .header, and .header has higher specificity than h1. The selector with the highest specificity wins when conflicts occur."
+  },
+  {
+    "id": 10,
+    "question": "What is the CSS Cascade?",
+    "slug": "what-is-the-css-cascade",
+    "answer": "The CSS Cascade is the process browsers use to determine which styles should be applied when multiple CSS rules target the same element. The decision is based on importance, specificity, and source order. If two selectors have the same specificity, the rule declared later in the stylesheet will be applied. The cascade ensures that browsers can consistently resolve style conflicts."
+  },
+  {
+    "id": 11,
+    "question": "What is !important and how does it affect specificity?",
+    "slug": "what-is-important-and-how-does-it-affect-specificity",
+    "answer": "The !important keyword is used to give a CSS declaration the highest priority. When a property is marked with !important, it overrides normal specificity rules and is applied even if another selector has higher specificity. However, if multiple !important declarations target the same property, the browser will again use specificity rules to determine the winner. Although !important can solve styling conflicts, it should be used sparingly because excessive usage makes CSS difficult to maintain and debug."
+  },
+  {
+    "id": 12,
+    "question": "What are CSS Selectors?",
+    "slug": "what-are-css-selectors",
+    "answer": "CSS Selectors are patterns used to target and select HTML elements for styling. Common selectors include element selectors, class selectors, id selectors, attribute selectors, pseudo-class selectors, and pseudo-element selectors. Selectors allow developers to apply styles efficiently to specific elements without modifying the HTML structure."
+  },
+  {
+    "id": 13,
+    "question": "What is the difference between Descendant and Child Selectors?",
+    "slug": "what-is-the-difference-between-descendant-and-child-selectors",
+    "answer": "A Descendant Selector targets all matching elements inside a parent element regardless of nesting level. For example, 'div p' selects every paragraph inside a div. A Child Selector targets only direct children of a parent element. For example, 'div > p' selects only paragraphs that are immediate children of a div. The Child Selector is more specific because it does not target deeply nested elements."
+  },
+  {
+    "id": 14,
+    "question": "What is the difference between Adjacent Sibling and General Sibling Selectors?",
+    "slug": "what-is-the-difference-between-adjacent-sibling-and-general-sibling-selectors",
+    "answer": "The Adjacent Sibling Selector (+) selects the immediately following sibling element. For example, 'h1 + p' selects the first paragraph that comes directly after an h1. The General Sibling Selector (~) selects all sibling elements that appear after the specified element and share the same parent. For example, 'h1 ~ p' selects all paragraphs that appear after the h1."
+  },
+  {
+    "id": 15,
+    "question": "What are Attribute Selectors?",
+    "slug": "what-are-attribute-selectors",
+    "answer": "Attribute Selectors are used to target HTML elements based on the presence or value of an attribute. For example, input[type='text'] selects all input elements whose type attribute is set to text. Attribute selectors are useful when styling form elements, links, or dynamically generated content without adding extra classes."
+  },
+  {
+    "id": 16,
+    "question": "What are Pseudo-classes?",
+    "slug": "what-are-pseudo-classes",
+    "answer": "Pseudo-classes are keywords added to selectors that define a special state of an element. They allow styling based on user interaction or element position. Common examples include :hover, :focus, :active, :first-child, :last-child, and :nth-child(). For example, a button can change color when a user hovers over it using the :hover pseudo-class."
+  },
+  {
+    "id": 17,
+    "question": "What are Pseudo-elements?",
+    "slug": "what-are-pseudo-elements",
+    "answer": "Pseudo-elements are used to style specific parts of an element or insert generated content. They are written using a double colon (::). Common examples include ::before, ::after, ::first-letter, and ::first-line. For example, ::before can be used to insert decorative content before an element without modifying the HTML structure."
+  },
+  {
+    "id": 18,
+    "question": "What is the difference between static, relative, absolute, fixed, and sticky positioning?",
+    "slug": "what-is-the-difference-between-static-relative-absolute-fixed-and-sticky-positioning",
+    "answer": "Static is the default positioning mode where elements follow the normal document flow. Relative positioning keeps the element in the normal flow but allows it to be moved using top, right, bottom, and left properties. Absolute positioning removes the element from the normal flow and positions it relative to its nearest positioned ancestor. Fixed positioning removes the element from the flow and positions it relative to the browser viewport, remaining visible during scrolling. Sticky positioning behaves like relative positioning until a specified scroll position is reached, after which it behaves like fixed positioning."
+  },
+  {
+    "id": 19,
+    "question": "What is the difference between Absolute and Fixed Positioning?",
+    "slug": "what-is-the-difference-between-absolute-and-fixed-positioning",
+    "answer": "Absolute positioned elements are placed relative to their nearest positioned ancestor and move when the page scrolls. Fixed positioned elements are placed relative to the browser viewport and remain in the same location even when the page is scrolled. Absolute positioning is commonly used for dropdowns and tooltips, while fixed positioning is often used for navigation bars, chat buttons, and floating action buttons."
+  },
+  {
+    "id": 20,
+    "question": "What is z-index and how does it work?",
+    "slug": "what-is-z-index-and-how-does-it-work",
+    "answer": "The z-index property controls the stacking order of overlapping elements on a web page. Elements with higher z-index values appear in front of elements with lower values. The z-index property only works on positioned elements, such as those with relative, absolute, fixed, or sticky positioning. It is commonly used for modals, dropdown menus, popups, and layered user interface components."
+  },
+  {
+    "id": 21,
+    "question": "Why is z-index not working?",
+    "slug": "why-is-z-index-not-working",
+    "answer": "There are several reasons why z-index may not work as expected. First, the element may not have a positioning value such as relative, absolute, fixed, or sticky. Second, the element may belong to a different stacking context, causing z-index values to be compared only within that context. Third, parent elements with properties like opacity, transform, or certain CSS filters can create new stacking contexts. When debugging z-index issues, it is important to inspect the element's positioning and stacking context hierarchy."
+  },
+  {
+    "id": 22,
+    "question": "What is the difference between display: none and visibility: hidden?",
+    "slug": "what-is-the-difference-between-display-none-and-visibility-hidden",
+    "answer": "The display: none property completely removes an element from the document layout. The element is not visible and does not occupy any space on the page. The visibility: hidden property hides the element but preserves its allocated space in the layout. Use display: none when you want to remove an element entirely from the page flow, and use visibility: hidden when you want the element hidden while maintaining the layout structure."
+  },
+  {
+    "id": 23,
+    "question": "What is the difference between opacity: 0 and visibility: hidden?",
+    "slug": "what-is-the-difference-between-opacity-zero-and-visibility-hidden",
+    "answer": "An element with opacity: 0 becomes fully transparent but still exists in the document, occupies space, and can receive user interactions such as clicks. An element with visibility: hidden is hidden from view and occupies space, but users generally cannot interact with it. Opacity is commonly used for animations and fade effects, while visibility is used when an element needs to be hidden without removing it from the layout."
+  },
+  {
+    "id": 24,
+    "question": "What is the difference between block, inline, and inline-block elements?",
+    "slug": "what-is-the-difference-between-block-inline-and-inline-block-elements",
+    "answer": "Block elements occupy the full available width and start on a new line. Examples include div, section, and article. Inline elements occupy only the space required by their content and do not start on a new line. Examples include span and anchor tags. Inline-block elements combine characteristics of both; they remain inline with surrounding content while allowing width and height properties to be applied. Inline-block is useful for creating horizontally aligned components with custom dimensions."
+  },
+  {
+    "id": 25,
+    "question": "What is Flexbox?",
+    "slug": "what-is-flexbox",
+    "answer": "Flexbox, or the Flexible Box Layout Model, is a one-dimensional layout system designed to arrange elements efficiently in rows or columns. It simplifies alignment, spacing, ordering, and distribution of elements within a container. Flexbox is particularly useful for responsive layouts because it automatically adjusts item sizes and positions based on the available space."
+  },
+  {
+    "id": 26,
+    "question": "What is the difference between justify-content and align-items?",
+    "slug": "what-is-the-difference-between-justify-content-and-align-items",
+    "answer": "In Flexbox, justify-content controls the alignment of items along the main axis, while align-items controls alignment along the cross axis. When flex-direction is row, justify-content aligns items horizontally and align-items aligns them vertically. Understanding these two properties is essential for creating properly aligned layouts in modern web applications."
+  },
+  {
+    "id": 27,
+    "question": "How do you center an element using Flexbox?",
+    "slug": "how-do-you-center-an-element-using-flexbox",
+    "answer": "To center an element both horizontally and vertically using Flexbox, set display: flex on the parent container, then use justify-content: center and align-items: center. Justify-content centers the element along the main axis, while align-items centers it along the cross axis. This is one of the most common and efficient techniques for centering content in CSS."
+  },
+  {
+    "id": 28,
+    "question": "What are flex-grow, flex-shrink, and flex-basis?",
+    "slug": "what-are-flex-grow-flex-shrink-and-flex-basis",
+    "answer": "These three properties control how flex items size themselves within a flex container. Flex-grow determines how much an item can expand when extra space is available. Flex-shrink determines how much an item can shrink when there is insufficient space. Flex-basis defines the initial size of the item before growth or shrinking occurs. Together, these properties provide powerful control over responsive layouts."
+  },
+  {
+    "id": 29,
+    "question": "What does flex: 1 mean?",
+    "slug": "what-does-flex-one-mean",
+    "answer": "The shorthand property flex: 1 is commonly interpreted as flex-grow: 1, flex-shrink: 1, and flex-basis: 0%. This means the flex item can grow to fill available space, shrink if necessary, and starts with a base size of zero. It is frequently used when multiple items should share available space equally within a flex container."
+  },
+  {
+    "id": 30,
+    "question": "What is the difference between CSS Grid and Flexbox?",
+    "slug": "what-is-the-difference-between-css-grid-and-flexbox",
+    "answer": "Flexbox is a one-dimensional layout system that works along a single axis, either a row or a column. CSS Grid is a two-dimensional layout system that works with both rows and columns simultaneously. Flexbox is ideal for components such as navigation bars, toolbars, and card layouts, while Grid is better suited for complete page layouts and complex designs requiring precise row and column control. In practice, developers often use Grid for overall page structure and Flexbox for individual components within that structure."
+  },
+  {
+    "id": 31,
+    "question": "What is CSS Grid?",
+    "slug": "what-is-css-grid",
+    "answer": "CSS Grid is a two-dimensional layout system that allows developers to create complex layouts using rows and columns. Unlike Flexbox, which works primarily in one dimension, Grid provides precise control over both horizontal and vertical placement of elements. It simplifies the creation of responsive page layouts and reduces the need for nested containers or complex positioning techniques."
+  },
+  {
+    "id": 32,
+    "question": "What is grid-template-columns?",
+    "slug": "what-is-grid-template-columns",
+    "answer": "The grid-template-columns property is used to define the number and size of columns in a CSS Grid container. Developers can specify fixed widths, percentages, flexible fractions (fr), or a combination of these values. For example, grid-template-columns: 200px 1fr 1fr creates three columns where the first column has a fixed width and the remaining columns share the available space equally."
+  },
+  {
+    "id": 33,
+    "question": "What is the difference between auto-fill and auto-fit?",
+    "slug": "what-is-the-difference-between-auto-fill-and-auto-fit",
+    "answer": "Both auto-fill and auto-fit are used with the repeat() function in CSS Grid to create responsive layouts. Auto-fill creates as many columns as possible, including empty columns if space is available. Auto-fit also creates as many columns as possible, but it collapses unused columns and allows existing columns to expand and fill the available space. In most responsive layouts, auto-fit is preferred because it utilizes available space more effectively."
+  },
+  {
+    "id": 34,
+    "question": "How do you create a responsive grid layout?",
+    "slug": "how-do-you-create-a-responsive-grid-layout",
+    "answer": "A responsive grid layout can be created using CSS Grid with the repeat(), auto-fit, and minmax() functions. For example, grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); automatically adjusts the number of columns based on available space. This approach allows items to wrap and resize without requiring multiple media queries, making layouts more flexible and responsive."
+  },
+  {
+    "id": 35,
+    "question": "What is the difference between px, em, rem, %, vw, and vh units?",
+    "slug": "what-is-the-difference-between-px-em-rem-percent-vw-and-vh-units",
+    "answer": "Px is a fixed unit representing pixels. Em is relative to the font size of the parent element. Rem is relative to the root HTML font size. Percentage (%) values are relative to the parent element's dimensions. Viewport width (vw) is relative to the browser window width, while viewport height (vh) is relative to the browser window height. Modern responsive designs commonly use rem, vw, vh, and percentages because they adapt better to different screen sizes."
+  },
+  {
+    "id": 36,
+    "question": "What is Responsive Web Design?",
+    "slug": "what-is-responsive-web-design",
+    "answer": "Responsive Web Design is an approach that ensures a website adapts to different screen sizes and devices, including desktops, tablets, and smartphones. It is achieved using flexible layouts, responsive units, media queries, and modern CSS techniques such as Flexbox and Grid. The goal is to provide an optimal user experience regardless of the device being used."
+  },
+  {
+    "id": 37,
+    "question": "What are Media Queries?",
+    "slug": "what-are-media-queries",
+    "answer": "Media Queries are CSS features that allow styles to be applied conditionally based on device characteristics such as screen width, height, resolution, or orientation. They are commonly used to create responsive layouts. For example, a website can display multiple columns on large screens and switch to a single-column layout on smaller mobile screens using media queries."
+  },
+  {
+    "id": 38,
+    "question": "What is the difference between em and rem?",
+    "slug": "what-is-the-difference-between-em-and-rem",
+    "answer": "Both em and rem are relative units. Em is calculated based on the font size of the parent element, which means nested elements can inherit and compound values. Rem is calculated based on the root HTML font size and remains consistent throughout the document. Rem is generally preferred for scalable and maintainable designs because it avoids unexpected sizing issues caused by nested elements."
+  },
+  {
+    "id": 39,
+    "question": "What is Mobile First Design?",
+    "slug": "what-is-mobile-first-design",
+    "answer": "Mobile First Design is a development approach where styles are initially created for mobile devices and then progressively enhanced for larger screens using media queries. This approach prioritizes performance, simplicity, and usability on smaller devices. Since mobile traffic represents a large percentage of web usage, Mobile First Design has become a standard practice in modern web development."
+  },
+  {
+    "id": 40,
+    "question": "What are CSS Variables?",
+    "slug": "what-are-css-variables",
+    "answer": "CSS Variables, also known as Custom Properties, allow developers to store reusable values such as colors, font sizes, spacing, and theme settings. They are defined using a double hyphen syntax, for example --primary-color: blue. Variables improve maintainability because changing the variable value automatically updates every place where it is used. They are especially useful in large applications and theme-based designs."
+  },
+  {
+    "id": 41,
+    "question": "What are CSS Custom Properties?",
+    "slug": "what-are-css-custom-properties",
+    "answer": "CSS Custom Properties are another name for CSS Variables. They allow developers to define reusable values that can be accessed throughout a stylesheet. Custom properties are declared using the double hyphen syntax, such as --primary-color: #3498db, and are accessed using the var() function. They improve maintainability, consistency, and make implementing themes such as dark mode much easier."
+  },
+  {
+    "id": 42,
+    "question": "What is the difference between transform and transition?",
+    "slug": "what-is-the-difference-between-transform-and-transition",
+    "answer": "Transform is used to modify the appearance or position of an element, such as moving, rotating, scaling, or skewing it. Transition is used to control how smoothly a property changes from one state to another over a specified duration. In simple terms, transform defines what change happens, while transition defines how that change is animated."
+  },
+  {
+    "id": 43,
+    "question": "What is the difference between transition and animation?",
+    "slug": "what-is-the-difference-between-transition-and-animation",
+    "answer": "A transition animates a property change between two states and usually requires a trigger such as hover, focus, or a class change. An animation can run automatically and supports multiple intermediate states using keyframes. Transitions are ideal for simple effects, while animations are better suited for complex sequences and repeated motion effects."
+  },
+  {
+    "id": 44,
+    "question": "What is transform: translate()?",
+    "slug": "what-is-transform-translate",
+    "answer": "The translate() function moves an element from its current position without affecting the document layout. It can move elements horizontally, vertically, or both. For example, translateX(100px) moves an element 100 pixels to the right. Translate is commonly used for animations, positioning adjustments, and creating smooth user interface interactions."
+  },
+  {
+    "id": 45,
+    "question": "What is transform: scale()?",
+    "slug": "what-is-transform-scale",
+    "answer": "The scale() function increases or decreases the size of an element. A value greater than 1 enlarges the element, while a value less than 1 reduces its size. For example, scale(1.2) makes an element 20 percent larger. Scale is commonly used in hover effects, image zoom interactions, and interactive user interface components."
+  },
+  {
+    "id": 46,
+    "question": "What is transform: rotate()?",
+    "slug": "what-is-transform-rotate",
+    "answer": "The rotate() function rotates an element around its center point by a specified angle. Positive values rotate clockwise, while negative values rotate counterclockwise. For example, rotate(45deg) rotates an element by 45 degrees. It is commonly used for icons, loading indicators, and decorative animation effects."
+  },
+  {
+    "id": 47,
+    "question": "What are CSS Keyframe Animations?",
+    "slug": "what-are-css-keyframe-animations",
+    "answer": "CSS Keyframe Animations allow developers to define multiple stages of an animation using the @keyframes rule. Each stage specifies how an element should appear at a particular point during the animation. This provides fine-grained control over movement, color changes, scaling, rotation, and other visual effects."
+  },
+  {
+    "id": 48,
+    "question": "How do you create CSS Animations?",
+    "slug": "how-do-you-create-css-animations",
+    "answer": "CSS Animations are created in two steps. First, an animation sequence is defined using the @keyframes rule. Second, the animation is applied to an element using properties such as animation-name, animation-duration, animation-delay, animation-iteration-count, and animation-timing-function. This allows developers to create smooth and reusable animation effects without JavaScript."
+  },
+  {
+    "id": 49,
+    "question": "What is the difference between min-width and max-width media queries?",
+    "slug": "what-is-the-difference-between-min-width-and-max-width-media-queries",
+    "answer": "A min-width media query applies styles when the screen width is greater than or equal to a specified value. It is commonly used in mobile-first development. A max-width media query applies styles when the screen width is less than or equal to a specified value and is commonly used in desktop-first approaches. Understanding the difference is important for building responsive layouts effectively."
+  },
+  {
+    "id": 50,
+    "question": "How can you improve CSS Performance?",
+    "slug": "how-can-you-improve-css-performance",
+    "answer": "CSS performance can be improved by using efficient selectors, minimizing deeply nested selectors, reducing unnecessary reflows and repaints, removing unused CSS, compressing and minifying stylesheets, and leveraging browser caching through external CSS files. Developers should also prefer modern layout techniques such as Flexbox and Grid and avoid excessive use of !important. Well-structured CSS improves both rendering speed and maintainability."
+  }
+]

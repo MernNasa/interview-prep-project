@@ -1,0 +1,1742 @@
+[
+  {
+    "id": 1,
+    "question": "What is JavaScript?",
+    "slug": "what-is-javascript",
+    "answer": "JavaScript is a high-level, interpreted, and dynamically typed programming language primarily used to add interactivity and dynamic behavior to web pages. It allows developers to manipulate the DOM, handle user events, perform asynchronous operations, and communicate with servers. JavaScript is one of the core technologies of the web alongside HTML and CSS."
+  },
+  {
+    "id": 2,
+    "question": "What are the features of JavaScript?",
+    "slug": "what-are-the-features-of-javascript",
+    "answer": "JavaScript offers several powerful features including dynamic typing, first-class functions, prototype-based inheritance, event-driven programming, asynchronous programming with Promises and async/await, cross-platform support, and seamless integration with HTML and CSS. These features make it suitable for both frontend and backend development."
+  },
+  {
+    "id": 3,
+    "question": "Why is JavaScript called a lightweight language?",
+    "slug": "why-is-javascript-called-a-lightweight-language",
+    "answer": "JavaScript is called a lightweight language because it has a simple syntax, requires minimal system resources, and does not need a separate compilation step before execution. It is designed to execute quickly within web browsers while providing powerful scripting capabilities."
+  },
+  {
+    "id": 4,
+    "question": "What is the difference between JavaScript and Java?",
+    "slug": "difference-between-javascript-and-java",
+    "answer": "JavaScript and Java are different programming languages despite having similar names. Java is a class-based, compiled language used for building standalone applications, while JavaScript is a prototype-based, interpreted language mainly used for web development. Java code runs on the JVM, whereas JavaScript runs in browsers and JavaScript runtimes such as Node.js."
+  },
+  {
+    "id": 5,
+    "question": "Is JavaScript interpreted or compiled?",
+    "slug": "is-javascript-interpreted-or-compiled",
+    "answer": "Modern JavaScript engines use a combination of interpretation and Just-In-Time (JIT) compilation. Initially, JavaScript code is parsed and interpreted, and frequently executed code is compiled into optimized machine code to improve performance. Therefore, modern JavaScript is neither purely interpreted nor purely compiled."
+  },
+  {
+    "id": 6,
+    "question": "Why is JavaScript called a single-threaded language?",
+    "slug": "why-is-javascript-single-threaded",
+    "answer": "JavaScript is called single-threaded because it executes code on a single call stack, processing one task at a time. Even though JavaScript can handle asynchronous operations, the actual execution of JavaScript code occurs on a single thread, with the Event Loop coordinating asynchronous tasks."
+  },
+  {
+    "id": 7,
+    "question": "What are the different ways to include JavaScript in an HTML page?",
+    "slug": "ways-to-include-javascript-in-html",
+    "answer": "JavaScript can be included in an HTML page using three methods: inline JavaScript inside HTML elements, internal JavaScript using the <script> tag within the HTML document, and external JavaScript by linking a separate .js file using the src attribute of the <script> tag. External files are generally preferred for maintainability and reusability."
+  },
+  {
+    "id": 8,
+    "question": "What are the applications of JavaScript?",
+    "slug": "applications-of-javascript",
+    "answer": "JavaScript is used for frontend web development, backend development with Node.js, mobile application development, desktop applications, game development, browser extensions, real-time applications, and serverless computing. Its versatility allows developers to build complete full-stack applications using a single language."
+  },
+  {
+    "id": 9,
+    "question": "What is ECMAScript?",
+    "slug": "what-is-ecmascript",
+    "answer": "ECMAScript is the standardized specification on which JavaScript is based. It defines the syntax, features, and behavior of the language. JavaScript engines implement the ECMAScript specification, ensuring consistent behavior across different browsers and platforms."
+  },
+  {
+    "id": 10,
+    "question": "What is the latest version of ECMAScript?",
+    "slug": "latest-version-of-ecmascript",
+    "answer": "ECMAScript is updated annually, and each release introduces new language features and improvements. Rather than focusing on a specific version number, developers should be familiar with modern ECMAScript features such as let, const, arrow functions, destructuring, modules, optional chaining, and async/await."
+  },
+    {
+    "id": 11,
+    "question": "What are the data types in JavaScript?",
+    "slug": "what-are-the-data-types-in-javascript",
+    "answer": "JavaScript data types are divided into two categories: primitive and non-primitive. Primitive data types include String, Number, Boolean, Undefined, Null, Symbol, and BigInt. Non-primitive data types include Objects, Arrays, Functions, Maps, and Sets. Primitive values are immutable and stored by value, while non-primitive values are stored by reference."
+  },
+  {
+    "id": 12,
+    "question": "What is the difference between primitive and non-primitive data types?",
+    "slug": "difference-between-primitive-and-non-primitive-data-types",
+    "answer": "Primitive data types store a single immutable value and are copied by value. Examples include Number, String, and Boolean. Non-primitive data types store collections of data or more complex entities and are copied by reference. Examples include Objects, Arrays, and Functions. Modifying a referenced object affects all variables pointing to the same object."
+  },
+  {
+    "id": 13,
+    "question": "What is the typeof operator?",
+    "slug": "what-is-typeof-operator",
+    "answer": "The typeof operator is used to determine the data type of a value or variable at runtime. It returns a string indicating the type, such as 'string', 'number', 'boolean', 'undefined', 'object', 'function', or 'bigint'. It is commonly used for type checking and validation in JavaScript applications."
+  },
+  {
+    "id": 14,
+    "question": "What is the difference between null and undefined?",
+    "slug": "difference-between-null-and-undefined",
+    "answer": "Undefined represents a variable that has been declared but has not been assigned a value. Null is an intentional assignment that represents the absence of any value. Undefined is automatically assigned by JavaScript, whereas null is explicitly assigned by the developer. Although typeof null returns 'object' due to a historical bug, null is considered a primitive value."
+  },
+  {
+    "id": 15,
+    "question": "What is NaN?",
+    "slug": "what-is-nan",
+    "answer": "NaN stands for 'Not a Number'. It is a special numeric value that represents an invalid or undefined mathematical result. For example, converting a non-numeric string to a number may produce NaN. Interestingly, NaN is the only value in JavaScript that is not equal to itself, making Number.isNaN() the recommended way to check for it."
+  },
+  {
+    "id": 16,
+    "question": "How do you check if a value is NaN?",
+    "slug": "how-to-check-if-value-is-nan",
+    "answer": "The recommended way to check if a value is NaN is by using Number.isNaN(). This method returns true only if the value is actually NaN and avoids the type coercion issues associated with the global isNaN() function. It provides more predictable and reliable results."
+  },
+  {
+    "id": 17,
+    "question": "What is Infinity in JavaScript?",
+    "slug": "what-is-infinity-in-javascript",
+    "answer": "Infinity is a special numeric value that represents a number greater than any finite number. It can occur when dividing a positive number by zero or through calculations that exceed JavaScript's maximum numeric limit. JavaScript also supports negative Infinity, represented as -Infinity."
+  },
+  {
+    "id": 18,
+    "question": "What is dynamic typing?",
+    "slug": "what-is-dynamic-typing",
+    "answer": "Dynamic typing means that variable types are determined at runtime rather than being explicitly declared. A JavaScript variable can hold different types of values during its lifetime. For example, a variable can initially store a number and later store a string without causing an error. This flexibility simplifies development but requires careful type management."
+  },
+  {
+    "id": 19,
+    "question": "What is type coercion?",
+    "slug": "what-is-type-coercion",
+    "answer": "Type coercion is the automatic conversion of one data type to another by JavaScript during operations or comparisons. For example, when comparing a string and a number using the == operator, JavaScript may convert one value to match the other type. While convenient, implicit coercion can sometimes lead to unexpected results, which is why strict equality (===) is generally preferred."
+  },
+  {
+    "id": 20,
+    "question": "What are truthy and falsy values?",
+    "slug": "what-are-truthy-and-falsy-values",
+    "answer": "In JavaScript, truthy values are values that evaluate to true in a Boolean context, while falsy values evaluate to false. The falsy values are false, 0, -0, 0n, empty string (''), null, undefined, and NaN. All other values are considered truthy. Understanding truthy and falsy values is important when working with conditions and logical operators."
+  },
+  {
+    "id": 21,
+    "question": "What is a variable?",
+    "slug": "what-is-a-variable",
+    "answer": "A variable is a named storage location used to hold data in a program. In JavaScript, variables allow developers to store, update, and manipulate values during program execution. Variables can store different types of data such as numbers, strings, objects, arrays, and functions."
+  },
+  {
+    "id": 22,
+    "question": "What is the difference between var, let, and const?",
+    "slug": "difference-between-var-let-and-const",
+    "answer": "The main differences are scope, hoisting behavior, and reassignment. Variables declared with var are function-scoped and can be redeclared and reassigned. Variables declared with let are block-scoped and can be reassigned but not redeclared within the same scope. Variables declared with const are block-scoped and cannot be reassigned after initialization. In modern JavaScript, let and const are generally preferred because they provide better scope control and help prevent accidental bugs."
+  },
+  {
+    "id": 23,
+    "question": "What is variable hoisting?",
+    "slug": "what-is-variable-hoisting",
+    "answer": "Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope during the compilation phase before code execution. Variables declared with var are hoisted and initialized with undefined, while let and const are hoisted but remain inaccessible until their declaration is reached, resulting in the Temporal Dead Zone. Understanding hoisting helps explain why certain variables can be referenced before they appear in the source code."
+  },
+  {
+    "id": 24,
+    "question": "What is the Temporal Dead Zone (TDZ)?",
+    "slug": "what-is-temporal-dead-zone",
+    "answer": "The Temporal Dead Zone (TDZ) is the period between entering a scope and the actual declaration of a let or const variable. During this period, the variable exists but cannot be accessed. Attempting to access it before its declaration results in a ReferenceError. The TDZ helps prevent bugs caused by accessing variables before they are properly initialized."
+  },
+  {
+    "id": 25,
+    "question": "What is variable shadowing?",
+    "slug": "what-is-variable-shadowing",
+    "answer": "Variable shadowing occurs when a variable declared in an inner scope has the same name as a variable declared in an outer scope. The inner variable temporarily hides or 'shadows' the outer variable within that scope. When the inner scope ends, the outer variable becomes accessible again."
+  },
+  {
+    "id": 26,
+    "question": "What is block scope?",
+    "slug": "what-is-block-scope",
+    "answer": "Block scope means that a variable is accessible only within the block in which it is declared. A block is defined by curly braces {} such as those used in if statements, loops, and functions. Variables declared using let and const are block-scoped, which helps avoid unintended access from outside the block."
+  },
+  {
+    "id": 27,
+    "question": "What is function scope?",
+    "slug": "what-is-function-scope",
+    "answer": "Function scope means that a variable declared inside a function can only be accessed within that function. Variables declared with var are function-scoped. Once the function execution completes, those variables are no longer directly accessible from outside the function."
+  },
+  {
+    "id": 28,
+    "question": "What is global scope?",
+    "slug": "what-is-global-scope",
+    "answer": "Global scope refers to variables, functions, or objects that are accessible from anywhere in the program. A variable declared outside of all functions and blocks is generally considered global. Excessive use of global variables is discouraged because it can lead to naming conflicts and make applications harder to maintain."
+  },
+  {
+    "id": 29,
+    "question": "Can a const object be modified?",
+    "slug": "can-a-const-object-be-modified",
+    "answer": "Yes, the properties of a const object can be modified. The const keyword prevents reassignment of the variable reference itself, but it does not make the object immutable. This means you can add, update, or delete object properties, but you cannot assign the variable to an entirely new object."
+  },
+  {
+    "id": 30,
+    "question": "What happens if you declare a variable without var, let, or const?",
+    "slug": "declare-variable-without-var-let-const",
+    "answer": "In non-strict mode, declaring a variable without var, let, or const automatically creates a global variable, which can lead to unexpected behavior and bugs. In strict mode, JavaScript throws a ReferenceError. For better code quality and maintainability, variables should always be declared explicitly using let or const."
+  },
+    {
+    "id": 31,
+    "question": "What are arithmetic operators?",
+    "slug": "what-are-arithmetic-operators",
+    "answer": "Arithmetic operators are used to perform mathematical calculations on numeric values. Common arithmetic operators in JavaScript include addition (+), subtraction (-), multiplication (*), division (/), modulus (%), exponentiation (**), increment (++), and decrement (--). These operators are frequently used in calculations, loops, and data processing logic."
+  },
+  {
+    "id": 32,
+    "question": "What are comparison operators?",
+    "slug": "what-are-comparison-operators",
+    "answer": "Comparison operators are used to compare two values and return a Boolean result of true or false. Common comparison operators include greater than (>), less than (<), greater than or equal to (>=), less than or equal to (<=), equality (==), strict equality (===), inequality (!=), and strict inequality (!==). They are commonly used in conditional statements and loops."
+  },
+  {
+    "id": 33,
+    "question": "What is the difference between == and ===?",
+    "slug": "difference-between-double-equals-and-triple-equals",
+    "answer": "The == operator performs loose equality comparison, meaning it compares values after applying type coercion if necessary. The === operator performs strict equality comparison, meaning both the value and data type must be identical for the comparison to return true. Because it avoids unexpected type conversions, === is generally recommended in modern JavaScript development."
+  },
+  {
+    "id": 34,
+    "question": "What is the difference between != and !==?",
+    "slug": "difference-between-not-equals-and-strict-not-equals",
+    "answer": "The != operator checks for inequality after performing type coercion if necessary. The !== operator checks for strict inequality, meaning it returns true if either the value or the data type differs. Since strict comparisons produce more predictable results, !== is preferred over != in most situations."
+  },
+  {
+    "id": 35,
+    "question": "What are logical operators?",
+    "slug": "what-are-logical-operators",
+    "answer": "Logical operators are used to combine or invert Boolean expressions. The AND operator (&&) returns true only if all conditions are true. The OR operator (||) returns true if at least one condition is true. The NOT operator (!) reverses a Boolean value. Logical operators are widely used in conditional statements and decision-making logic."
+  },
+  {
+    "id": 36,
+    "question": "What is the ternary operator?",
+    "slug": "what-is-the-ternary-operator",
+    "answer": "The ternary operator is a shorthand way of writing an if-else statement. It consists of three parts: a condition, an expression executed when the condition is true, and an expression executed when the condition is false. It improves code readability when working with simple conditional assignments or expressions."
+  },
+  {
+    "id": 37,
+    "question": "What is the nullish coalescing operator (??)?",
+    "slug": "what-is-nullish-coalescing-operator",
+    "answer": "The nullish coalescing operator (??) returns the right-hand value only when the left-hand value is null or undefined. Unlike the logical OR operator (||), it does not treat values such as 0, false, or an empty string as missing values. This makes it useful for providing default values while preserving valid falsy data."
+  },
+  {
+    "id": 38,
+    "question": "What is the optional chaining operator (?.)?",
+    "slug": "what-is-optional-chaining-operator",
+    "answer": "Optional chaining (?.) allows developers to safely access nested object properties without causing an error if an intermediate property is null or undefined. Instead of throwing a TypeError, JavaScript returns undefined. This simplifies code and reduces the need for multiple conditional checks."
+  },
+  {
+    "id": 39,
+    "question": "What is the spread operator (...)?",
+    "slug": "what-is-the-spread-operator",
+    "answer": "The spread operator (...) expands the elements of an iterable such as an array or the properties of an object into individual values. It is commonly used for copying arrays or objects, merging collections, passing arguments to functions, and creating immutable updates in modern JavaScript applications."
+  },
+  {
+    "id": 40,
+    "question": "What is the rest operator (...)?",
+    "slug": "what-is-the-rest-operator",
+    "answer": "The rest operator (...) collects multiple values into a single array or object. It is commonly used in function parameters to accept a variable number of arguments and in destructuring assignments to gather remaining elements. Although it uses the same syntax as the spread operator, its purpose is the opposite: collecting values instead of expanding them."
+  },
+    {
+    "id": 41,
+    "question": "What is implicit type conversion?",
+    "slug": "what-is-implicit-type-conversion",
+    "answer": "Implicit type conversion, also known as type coercion, occurs when JavaScript automatically converts a value from one data type to another during an operation. For example, when a string is added to a number, JavaScript converts the number to a string. While this feature provides flexibility, it can sometimes produce unexpected results, so developers should understand when automatic conversions occur."
+  },
+  {
+    "id": 42,
+    "question": "What is explicit type conversion?",
+    "slug": "what-is-explicit-type-conversion",
+    "answer": "Explicit type conversion, also known as type casting, occurs when a developer intentionally converts a value from one data type to another using functions such as Number(), String(), or Boolean(). Unlike implicit conversion, explicit conversion makes the developer's intention clear and helps produce more predictable code."
+  },
+  {
+    "id": 43,
+    "question": "How do you convert a string to a number?",
+    "slug": "how-to-convert-string-to-number",
+    "answer": "A string can be converted to a number using Number(), parseInt(), parseFloat(), or the unary plus (+) operator. Number() attempts to convert the entire string into a number, while parseInt() and parseFloat() extract numeric values from the beginning of a string. The appropriate method depends on the type of numeric conversion required."
+  },
+  {
+    "id": 44,
+    "question": "What is the difference between Number(), parseInt(), and parseFloat()?",
+    "slug": "difference-between-number-parseint-and-parsefloat",
+    "answer": "Number() converts the entire string into a numeric value and returns NaN if the conversion fails. parseInt() extracts and converts only the integer portion of a string, while parseFloat() extracts and converts floating-point numbers. For example, Number('10.5px') returns NaN, whereas parseFloat('10.5px') returns 10.5."
+  },
+  {
+    "id": 45,
+    "question": "How do you convert a number to a string?",
+    "slug": "how-to-convert-number-to-string",
+    "answer": "A number can be converted to a string using String(), the toString() method, or template literals. String() works with all values and is generally considered the safest approach. Converting numbers to strings is commonly required when displaying numeric data in the user interface."
+  },
+  {
+    "id": 46,
+    "question": "What is Boolean conversion?",
+    "slug": "what-is-boolean-conversion",
+    "answer": "Boolean conversion is the process of converting a value into either true or false. This can be done explicitly using Boolean() or implicitly in conditional statements. Values such as 0, '', null, undefined, NaN, and false convert to false, while most other values convert to true."
+  },
+  {
+    "id": 47,
+    "question": "What will \"5\" + 2 return and why?",
+    "slug": "what-will-string-five-plus-two-return",
+    "answer": "The expression '5' + 2 returns '52'. This happens because the + operator performs string concatenation when one of the operands is a string. JavaScript implicitly converts the number 2 into the string '2' and combines both strings to produce '52'."
+  },
+  {
+    "id": 48,
+    "question": "What will \"5\" - 2 return and why?",
+    "slug": "what-will-string-five-minus-two-return",
+    "answer": "The expression '5' - 2 returns 3. Unlike the addition operator, the subtraction operator only performs mathematical operations. JavaScript automatically converts the string '5' into the number 5 before performing the subtraction, resulting in the numeric value 3."
+  },
+  {
+    "id": 49,
+    "question": "What is Number.isNaN()?",
+    "slug": "what-is-number-isnan",
+    "answer": "Number.isNaN() is a method used to determine whether a value is specifically the NaN value. Unlike the global isNaN() function, it does not perform type coercion before checking. This makes Number.isNaN() more reliable and predictable when validating numeric values."
+  },
+  {
+    "id": 50,
+    "question": "How does JavaScript handle type conversion internally?",
+    "slug": "how-javascript-handles-type-conversion-internally",
+    "answer": "JavaScript follows a set of internal type coercion rules defined by the ECMAScript specification. During comparisons, arithmetic operations, and logical evaluations, JavaScript may automatically convert values to compatible types. For example, strings may be converted to numbers during mathematical operations, and values may be converted to Booleans in conditional expressions. Understanding these rules is important for writing predictable and bug-free code."
+  },
+    {
+    "id": 51,
+    "question": "What is an if statement?",
+    "slug": "what-is-an-if-statement",
+    "answer": "An if statement is a conditional control structure used to execute a block of code only when a specified condition evaluates to true. It allows programs to make decisions and perform different actions based on different inputs or situations. If the condition evaluates to false, the code inside the if block is skipped."
+  },
+  {
+    "id": 52,
+    "question": "What is the difference between if, else if, and else?",
+    "slug": "difference-between-if-else-if-and-else",
+    "answer": "The if statement checks an initial condition and executes its block if the condition is true. The else if statement allows additional conditions to be checked when previous conditions are false. The else statement provides a default block of code that executes when none of the preceding conditions are true. Together, they enable multi-way decision making in JavaScript."
+  },
+  {
+    "id": 53,
+    "question": "What is a switch statement?",
+    "slug": "what-is-a-switch-statement",
+    "answer": "A switch statement is a control structure used to execute different blocks of code based on the value of an expression. It compares the expression against multiple case values and executes the matching case. A switch statement is often cleaner and more readable than multiple if-else statements when checking a single variable against many possible values."
+  },
+  {
+    "id": 54,
+    "question": "When should you use switch instead of if?",
+    "slug": "when-should-you-use-switch-instead-of-if",
+    "answer": "A switch statement should be used when a single expression needs to be compared against multiple specific values. It improves readability and organization compared to long chains of if-else statements. However, if the logic involves complex conditions, ranges, or multiple variables, if-else statements are generally more appropriate."
+  },
+  {
+    "id": 55,
+    "question": "What is a for loop?",
+    "slug": "what-is-a-for-loop",
+    "answer": "A for loop is an iteration structure used when the number of repetitions is known or can be determined. It consists of three parts: initialization, condition, and update expression. The loop continues executing as long as the condition remains true, making it one of the most commonly used looping constructs in JavaScript."
+  },
+  {
+    "id": 56,
+    "question": "What is a while loop?",
+    "slug": "what-is-a-while-loop",
+    "answer": "A while loop repeatedly executes a block of code as long as a specified condition remains true. The condition is evaluated before each iteration, which means the loop may execute zero times if the condition is initially false. It is commonly used when the number of iterations is not known beforehand."
+  },
+  {
+    "id": 57,
+    "question": "What is a do...while loop?",
+    "slug": "what-is-a-do-while-loop",
+    "answer": "A do...while loop is similar to a while loop, but it guarantees that the code block executes at least once because the condition is checked after the loop body runs. This makes it useful when an action must occur before validating whether further iterations are needed."
+  },
+  {
+    "id": 58,
+    "question": "What is an infinite loop?",
+    "slug": "what-is-an-infinite-loop",
+    "answer": "An infinite loop is a loop that never terminates because its condition always evaluates to true or there is no valid exit condition. Infinite loops can cause applications to become unresponsive and consume excessive system resources. Developers should ensure that loop conditions eventually become false or include a mechanism to break out of the loop."
+  },
+  {
+    "id": 59,
+    "question": "What is the break statement?",
+    "slug": "what-is-the-break-statement",
+    "answer": "The break statement is used to immediately terminate a loop or switch statement and transfer control to the next statement after the loop or switch. It is commonly used when a desired result has been found and further iterations are unnecessary, improving both efficiency and readability."
+  },
+  {
+    "id": 60,
+    "question": "What is the continue statement?",
+    "slug": "what-is-the-continue-statement",
+    "answer": "The continue statement skips the current iteration of a loop and moves directly to the next iteration. Unlike break, it does not terminate the loop entirely. It is useful when certain conditions require skipping specific iterations while allowing the loop to continue processing the remaining elements."
+  },
+    {
+    "id": 61,
+    "question": "What is a function?",
+    "slug": "what-is-a-function",
+    "answer": "A function is a reusable block of code designed to perform a specific task. Functions help organize code, improve readability, reduce duplication, and make applications easier to maintain. A function can accept input values called parameters, process them, and optionally return a result."
+  },
+  {
+    "id": 62,
+    "question": "What is the difference between a function declaration and a function expression?",
+    "slug": "difference-between-function-declaration-and-function-expression",
+    "answer": "A function declaration defines a named function using the function keyword and is fully hoisted, allowing it to be called before its declaration in the code. A function expression assigns a function to a variable and is not fully hoisted in the same way. Function expressions are often used when functions need to be passed as arguments or assigned dynamically."
+  },
+  {
+    "id": 63,
+    "question": "What is an arrow function?",
+    "slug": "what-is-an-arrow-function",
+    "answer": "An arrow function is a shorter syntax introduced in ES6 for writing functions. It uses the => operator and provides a more concise way to define functions. Arrow functions do not have their own this, arguments, super, or new.target, making them particularly useful for callbacks and functional programming patterns."
+  },
+  {
+    "id": 64,
+    "question": "What are the advantages of arrow functions?",
+    "slug": "advantages-of-arrow-functions",
+    "answer": "Arrow functions provide cleaner and shorter syntax, making code easier to read and maintain. They automatically inherit the this value from their surrounding scope, eliminating the need for workarounds such as storing this in another variable. They are commonly used in callbacks, array methods, and asynchronous code."
+  },
+  {
+    "id": 65,
+    "question": "What is the difference between regular functions and arrow functions?",
+    "slug": "difference-between-regular-functions-and-arrow-functions",
+    "answer": "Regular functions have their own this context, can be used as constructors with the new keyword, and have access to the arguments object. Arrow functions inherit this from the surrounding scope, cannot be used as constructors, and do not have their own arguments object. Because of these differences, the choice depends on the specific use case."
+  },
+  {
+    "id": 66,
+    "question": "What are default parameters?",
+    "slug": "what-are-default-parameters",
+    "answer": "Default parameters allow a function parameter to have a predefined value if no argument or an undefined value is provided during the function call. This feature helps simplify function logic by reducing the need for manual checks and fallback assignments inside the function body."
+  },
+  {
+    "id": 67,
+    "question": "What are callback functions?",
+    "slug": "what-are-callback-functions",
+    "answer": "A callback function is a function that is passed as an argument to another function and is executed later. Callbacks are widely used for handling asynchronous operations, event handling, and custom logic execution. They allow functions to be more flexible and reusable by enabling dynamic behavior."
+  },
+  {
+    "id": 68,
+    "question": "What are higher-order functions?",
+    "slug": "what-are-higher-order-functions",
+    "answer": "A higher-order function is a function that either accepts one or more functions as arguments, returns a function, or both. Examples include map(), filter(), and reduce(). Higher-order functions promote code reusability, abstraction, and functional programming principles in JavaScript."
+  },
+  {
+    "id": 69,
+    "question": "What is recursion?",
+    "slug": "what-is-recursion",
+    "answer": "Recursion is a programming technique in which a function calls itself to solve a problem. Each recursive call works on a smaller version of the original problem until a base condition is reached. Recursion is commonly used for tasks involving hierarchical data structures, mathematical calculations, and divide-and-conquer algorithms."
+  },
+  {
+    "id": 70,
+    "question": "What is an IIFE?",
+    "slug": "what-is-an-iife",
+    "answer": "IIFE stands for Immediately Invoked Function Expression. It is a function that is defined and executed immediately after its creation. IIFEs are commonly used to create a private scope, avoid polluting the global namespace, and encapsulate variables and logic that should not be accessible outside the function."
+  },
+  {
+    "id": 71,
+    "question": "What is function hoisting?",
+    "slug": "what-is-function-hoisting",
+    "answer": "Function hoisting is JavaScript's behavior of moving function declarations to the top of their scope during the creation phase of execution. As a result, a function declaration can be called before it appears in the code. However, function expressions and arrow functions assigned to variables are not hoisted in the same way because only the variable declaration is hoisted, not the function assignment."
+  },
+  {
+    "id": 72,
+    "question": "What are anonymous functions?",
+    "slug": "what-are-anonymous-functions",
+    "answer": "Anonymous functions are functions that do not have a name. They are commonly used as callback functions, event handlers, and function expressions. Since they are often created for one-time use, naming them is not always necessary. Anonymous functions are widely used in modern JavaScript development, especially with array methods and asynchronous programming."
+  },
+  {
+    "id": 73,
+    "question": "What are named functions?",
+    "slug": "what-are-named-functions",
+    "answer": "Named functions are functions that have an explicit identifier. They improve code readability, make debugging easier because the function name appears in stack traces, and can be reused throughout the application. Function declarations are typically named functions, although function expressions can also be named."
+  },
+  {
+    "id": 74,
+    "question": "What is currying?",
+    "slug": "what-is-currying",
+    "answer": "Currying is a functional programming technique that transforms a function with multiple parameters into a sequence of functions, each accepting a single parameter. This allows partial application of arguments and promotes code reusability. Currying is commonly used in functional programming libraries and advanced JavaScript patterns."
+  },
+  {
+    "id": 75,
+    "question": "What is function borrowing?",
+    "slug": "what-is-function-borrowing",
+    "answer": "Function borrowing is a technique where one object uses a method that belongs to another object. This is typically achieved using call(), apply(), or bind() to explicitly set the value of this. Function borrowing helps avoid code duplication and allows methods to be shared across different objects."
+  },
+  {
+    "id": 76,
+    "question": "What is memoization?",
+    "slug": "what-is-memoization",
+    "answer": "Memoization is an optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs are provided again. This reduces unnecessary computations and improves performance, especially for functions that are called repeatedly with identical arguments."
+  },
+  {
+    "id": 77,
+    "question": "What are pure functions?",
+    "slug": "what-are-pure-functions",
+    "answer": "A pure function is a function that always produces the same output for the same input and does not cause any side effects. It does not modify external variables, perform network requests, or alter application state. Pure functions are predictable, easy to test, and commonly used in functional programming."
+  },
+  {
+    "id": 78,
+    "question": "What are impure functions?",
+    "slug": "what-are-impure-functions",
+    "answer": "An impure function is a function whose output may depend on external factors or which produces side effects. Examples include modifying global variables, updating the DOM, reading from a database, or making API calls. While impure functions are necessary in real-world applications, they are generally harder to test and reason about than pure functions."
+  },
+  {
+    "id": 79,
+    "question": "What is a first-class function?",
+    "slug": "what-is-a-first-class-function",
+    "answer": "JavaScript treats functions as first-class citizens, meaning functions can be assigned to variables, passed as arguments to other functions, returned from functions, and stored in data structures. This capability enables powerful programming patterns such as callbacks, higher-order functions, and functional programming techniques."
+  },
+  {
+    "id": 80,
+    "question": "What is a generator function?",
+    "slug": "what-is-a-generator-function",
+    "answer": "A generator function is a special type of function introduced in ES6 that can pause and resume its execution. It is declared using function* syntax and uses the yield keyword to return values one at a time. Generator functions are useful for handling large data sequences, custom iterators, and scenarios where lazy evaluation is beneficial."
+  },
+   {
+    "id": 81,
+    "question": "What is an array?",
+    "slug": "what-is-an-array",
+    "answer": "An array is an ordered collection of values stored under a single variable name. Arrays can hold elements of any data type, including numbers, strings, objects, functions, and even other arrays. They provide a convenient way to store and manipulate multiple related values and are one of the most commonly used data structures in JavaScript."
+  },
+  {
+    "id": 82,
+    "question": "How do you create an array?",
+    "slug": "how-to-create-an-array",
+    "answer": "An array can be created using array literal syntax ([]), which is the most common and recommended approach, or by using the Array constructor. Array literals are preferred because they are shorter, more readable, and avoid some of the unexpected behaviors associated with the Array constructor."
+  },
+  {
+    "id": 83,
+    "question": "What is the difference between push() and pop()?",
+    "slug": "difference-between-push-and-pop",
+    "answer": "The push() method adds one or more elements to the end of an array and returns the new array length. The pop() method removes and returns the last element from an array. Both methods modify the original array and are commonly used when working with stack-like data structures."
+  },
+  {
+    "id": 84,
+    "question": "What is the difference between shift() and unshift()?",
+    "slug": "difference-between-shift-and-unshift",
+    "answer": "The shift() method removes and returns the first element of an array, causing all remaining elements to move one position forward. The unshift() method adds one or more elements to the beginning of an array and returns the new array length. Both methods modify the original array and are often used when implementing queue-like behavior."
+  },
+  {
+    "id": 85,
+    "question": "What is the difference between slice() and splice()?",
+    "slug": "difference-between-slice-and-splice",
+    "answer": "The slice() method creates and returns a shallow copy of a portion of an array without modifying the original array. The splice() method is used to add, remove, or replace elements within an array and directly modifies the original array. A common interview point is that slice is non-mutating, while splice is mutating."
+  },
+  {
+    "id": 86,
+    "question": "What is the map() method?",
+    "slug": "what-is-the-map-method",
+    "answer": "The map() method creates a new array by applying a callback function to every element of the original array. It does not modify the original array and always returns a new array of the same length. It is commonly used when transforming data, such as converting values, formatting strings, or generating UI elements."
+  },
+  {
+    "id": 87,
+    "question": "What is the difference between map() and forEach()?",
+    "slug": "difference-between-map-and-foreach",
+    "answer": "The map() method returns a new array containing the transformed results of each element, while forEach() simply executes a callback for each element and returns undefined. Use map() when you need a new transformed array and use forEach() when you only need to perform side effects such as logging, updating variables, or manipulating the DOM."
+  },
+  {
+    "id": 88,
+    "question": "What is the filter() method?",
+    "slug": "what-is-the-filter-method",
+    "answer": "The filter() method creates a new array containing only the elements that satisfy a specified condition. It does not modify the original array and is commonly used to search, remove unwanted items, or create subsets of data based on specific criteria."
+  },
+  {
+    "id": 89,
+    "question": "What is the reduce() method?",
+    "slug": "what-is-the-reduce-method",
+    "answer": "The reduce() method processes all elements of an array and combines them into a single accumulated value. It accepts a callback function and an optional initial value. Common use cases include calculating sums, grouping data, counting occurrences, flattening arrays, and transforming data structures."
+  },
+  {
+    "id": 90,
+    "question": "What is the find() method?",
+    "slug": "what-is-the-find-method",
+    "answer": "The find() method returns the first element in an array that satisfies a specified condition. If no matching element is found, it returns undefined. Unlike filter(), which may return multiple results, find() stops searching as soon as it finds the first matching element, making it more efficient when only one result is needed."
+  },
+  {
+    "id": 91,
+    "question": "What is the findIndex() method?",
+    "slug": "what-is-the-findindex-method",
+    "answer": "The findIndex() method returns the index of the first element in an array that satisfies a specified condition. If no matching element is found, it returns -1. It is useful when the position of an element is needed rather than the element itself."
+  },
+  {
+    "id": 92,
+    "question": "What is the some() method?",
+    "slug": "what-is-the-some-method",
+    "answer": "The some() method checks whether at least one element in an array satisfies a specified condition. It returns true as soon as a matching element is found; otherwise, it returns false. This method is commonly used for validation and existence checks."
+  },
+  {
+    "id": 93,
+    "question": "What is the every() method?",
+    "slug": "what-is-the-every-method",
+    "answer": "The every() method checks whether all elements in an array satisfy a specified condition. It returns true only if every element passes the test; otherwise, it returns false. It is commonly used for validating collections of data against a set of rules."
+  },
+  {
+    "id": 94,
+    "question": "What is the includes() method?",
+    "slug": "what-is-the-includes-method",
+    "answer": "The includes() method checks whether an array contains a specified value and returns true or false accordingly. It performs a straightforward existence check and is generally more readable than using indexOf() for the same purpose."
+  },
+  {
+    "id": 95,
+    "question": "What is the flat() method?",
+    "slug": "what-is-the-flat-method",
+    "answer": "The flat() method creates a new array by flattening nested arrays up to a specified depth. By default, it flattens one level deep. It is useful when working with arrays that contain nested structures and need to be converted into a simpler format."
+  },
+  {
+    "id": 96,
+    "question": "What is the flatMap() method?",
+    "slug": "what-is-the-flatmap-method",
+    "answer": "The flatMap() method combines the functionality of map() and flat() into a single operation. It first transforms each element using a callback function and then flattens the result by one level. This can improve readability and performance when both mapping and flattening are required."
+  },
+  {
+    "id": 97,
+    "question": "How do you remove duplicates from an array?",
+    "slug": "how-to-remove-duplicates-from-an-array",
+    "answer": "The most common modern approach is to use a Set because a Set stores only unique values. By converting an array to a Set and then back to an array, duplicates can be removed efficiently. Other approaches include using filter(), reduce(), or object-based lookups, but Set is generally the simplest and most readable solution."
+  },
+  {
+    "id": 98,
+    "question": "How do you sort an array?",
+    "slug": "how-to-sort-an-array",
+    "answer": "Arrays can be sorted using the sort() method. By default, sort() converts elements to strings and compares them lexicographically. For numeric sorting, a comparison function should be provided to ensure correct ordering. The sort() method modifies the original array, so a copy should be created first if immutability is required."
+  },
+  {
+    "id": 99,
+    "question": "What is array destructuring?",
+    "slug": "what-is-array-destructuring",
+    "answer": "Array destructuring is an ES6 feature that allows values from an array to be extracted into separate variables using a concise syntax. It improves readability and reduces the need for multiple assignment statements. Destructuring is commonly used when working with function returns, arrays, and React hooks."
+  },
+  {
+    "id": 100,
+    "question": "What is the Array.from() method?",
+    "slug": "what-is-array-from-method",
+    "answer": "The Array.from() method creates a new array from an iterable or array-like object, such as a string, Set, Map, or NodeList. It can also accept a mapping function to transform elements during creation. This method is commonly used to convert non-array collections into actual arrays so that array methods can be used on them."
+  },
+  {
+    "id": 101,
+    "question": "What is an object?",
+    "slug": "what-is-an-object",
+    "answer": "An object is a non-primitive data type used to store collections of related data in the form of key-value pairs. Objects can contain properties and methods, making them suitable for representing real-world entities and complex data structures. Almost everything in JavaScript is built around objects, making them a fundamental part of the language."
+  },
+  {
+    "id": 102,
+    "question": "How do you create an object?",
+    "slug": "how-to-create-an-object",
+    "answer": "Objects can be created using object literal syntax ({}), the Object constructor, constructor functions, classes, or Object.create(). The object literal syntax is the most commonly used approach because it is simple, concise, and easy to read."
+  },
+  {
+    "id": 103,
+    "question": "What is the difference between dot notation and bracket notation?",
+    "slug": "difference-between-dot-notation-and-bracket-notation",
+    "answer": "Dot notation accesses object properties using a fixed property name and is generally more readable. Bracket notation accesses properties using a string or expression and is useful when property names are dynamic, contain spaces, or are stored in variables. Both notations can be used to read and update object properties."
+  },
+  {
+    "id": 104,
+    "question": "How do you add properties to an object?",
+    "slug": "how-to-add-properties-to-an-object",
+    "answer": "Properties can be added to an object by assigning a value to a new key using either dot notation or bracket notation. JavaScript objects are dynamic, meaning new properties can be added at runtime without modifying the original object definition."
+  },
+  {
+    "id": 105,
+    "question": "How do you update object properties?",
+    "slug": "how-to-update-object-properties",
+    "answer": "Object properties can be updated by assigning a new value to an existing key using dot notation or bracket notation. If the property already exists, its previous value is replaced with the new value. This is one of the most common operations performed on JavaScript objects."
+  },
+  {
+    "id": 106,
+    "question": "How do you delete object properties?",
+    "slug": "how-to-delete-object-properties",
+    "answer": "Object properties can be removed using the delete operator. When a property is deleted, it is removed entirely from the object rather than simply being assigned a new value. This can be useful when cleaning up data structures or removing unnecessary information."
+  },
+  {
+    "id": 107,
+    "question": "What is object destructuring?",
+    "slug": "what-is-object-destructuring",
+    "answer": "Object destructuring is an ES6 feature that allows properties of an object to be extracted into individual variables using a concise syntax. It improves code readability and reduces repetitive property access. Destructuring is widely used in modern JavaScript, especially when working with API responses, function parameters, and React components."
+  },
+  {
+    "id": 108,
+    "question": "What is a shallow copy?",
+    "slug": "what-is-a-shallow-copy",
+    "answer": "A shallow copy creates a new object but copies only the top-level properties. If the object contains nested objects or arrays, the references to those nested structures are copied rather than the actual values. As a result, changes made to nested objects in the copy can affect the original object."
+  },
+  {
+    "id": 109,
+    "question": "What is a deep copy?",
+    "slug": "what-is-a-deep-copy",
+    "answer": "A deep copy creates a completely independent copy of an object, including all nested objects and arrays. Changes made to the copied object do not affect the original object. Deep copying is important when working with complex data structures where complete isolation between copies is required."
+  },
+  {
+    "id": 110,
+    "question": "What is Object.keys()?",
+    "slug": "what-is-object-keys",
+    "answer": "Object.keys() is a built-in JavaScript method that returns an array containing all enumerable property names of an object. It is commonly used for iteration, validation, data transformation, and dynamically processing object properties."
+  },
+   {
+    "id": 111,
+    "question": "What is Object.values()?",
+    "slug": "what-is-object-values",
+    "answer": "Object.values() is a built-in JavaScript method that returns an array containing all enumerable property values of an object. The values are returned in the same order as the object's properties. This method is useful when you need to process or iterate over object values without accessing the property names."
+  },
+  {
+    "id": 112,
+    "question": "What is Object.entries()?",
+    "slug": "what-is-object-entries",
+    "answer": "Object.entries() returns an array of key-value pairs from an object, where each pair is represented as a two-element array. This method is particularly useful when iterating over both property names and values using loops or array methods such as map(), filter(), and reduce()."
+  },
+  {
+    "id": 113,
+    "question": "What is Object.assign()?",
+    "slug": "what-is-object-assign",
+    "answer": "Object.assign() is a method used to copy properties from one or more source objects into a target object. It is commonly used for object merging and creating shallow copies. Since it performs a shallow copy, nested objects are copied by reference rather than being duplicated."
+  },
+  {
+    "id": 114,
+    "question": "What is object freezing?",
+    "slug": "what-is-object-freezing",
+    "answer": "Object freezing is achieved using Object.freeze(). A frozen object cannot have new properties added, existing properties removed, or existing property values modified. It provides the highest level of object immutability available through JavaScript's built-in object methods, although nested objects can still be modified unless they are also frozen."
+  },
+  {
+    "id": 115,
+    "question": "What is object sealing?",
+    "slug": "what-is-object-sealing",
+    "answer": "Object sealing is achieved using Object.seal(). A sealed object prevents the addition or removal of properties, but existing property values can still be modified. Sealing provides partial immutability and is useful when the structure of an object should remain fixed while allowing updates to existing data."
+  },
+  {
+    "id": 116,
+    "question": "What is the difference between freeze() and seal()?",
+    "slug": "difference-between-freeze-and-seal",
+    "answer": "Object.freeze() prevents adding, deleting, and modifying properties, making the object effectively immutable at the top level. Object.seal() prevents adding and deleting properties but still allows modification of existing property values. In interviews, a common answer is that freeze provides stronger immutability than seal."
+  },
+  {
+    "id": 117,
+    "question": "What is property enumeration?",
+    "slug": "what-is-property-enumeration",
+    "answer": "Property enumeration is the process of iterating through an object's properties. JavaScript provides several ways to enumerate properties, including for...in loops, Object.keys(), Object.values(), and Object.entries(). Enumeration is commonly used when dynamically processing object data."
+  },
+  {
+    "id": 118,
+    "question": "What is the in operator?",
+    "slug": "what-is-the-in-operator",
+    "answer": "The in operator is used to check whether a specified property exists in an object. It returns true if the property is found either directly on the object or through its prototype chain. This makes it different from methods that check only an object's own properties."
+  },
+  {
+    "id": 119,
+    "question": "What is the hasOwnProperty() method?",
+    "slug": "what-is-hasownproperty",
+    "answer": "The hasOwnProperty() method checks whether a property exists directly on an object rather than being inherited from its prototype chain. It returns true only for the object's own properties. This method is commonly used when iterating through objects to avoid processing inherited properties."
+  },
+  {
+    "id": 120,
+    "question": "What is the difference between arrays and objects?",
+    "slug": "difference-between-arrays-and-objects",
+    "answer": "Arrays are ordered collections of values accessed using numeric indexes, while objects are collections of key-value pairs accessed using property names. Arrays are best suited for storing lists of related items, whereas objects are ideal for representing entities with named attributes. Although arrays are technically objects in JavaScript, they are optimized for sequential data storage and manipulation."
+  },
+   {
+    "id": 121,
+    "question": "What is the DOM?",
+    "slug": "what-is-the-dom",
+    "answer": "The DOM (Document Object Model) is a programming interface that represents an HTML or XML document as a tree-like structure of objects. It allows JavaScript to access, modify, create, and delete elements dynamically. Through the DOM, developers can update content, styles, and structure of a web page without reloading it."
+  },
+  {
+    "id": 122,
+    "question": "How is the DOM structured?",
+    "slug": "how-is-the-dom-structured",
+    "answer": "The DOM is structured as a hierarchical tree known as the DOM tree. The document object serves as the root node, followed by HTML elements as parent and child nodes. Each element, attribute, and piece of text is represented as a node, allowing JavaScript to traverse and manipulate the document efficiently."
+  },
+  {
+    "id": 123,
+    "question": "What is the difference between getElementById() and querySelector()?",
+    "slug": "difference-between-getelementbyid-and-queryselector",
+    "answer": "getElementById() selects an element based on its unique id attribute and returns a single element. querySelector() uses CSS selectors and returns the first matching element. While getElementById() is slightly faster for id selection, querySelector() is more flexible because it supports all CSS selector patterns."
+  },
+  {
+    "id": 124,
+    "question": "What is the difference between querySelector() and querySelectorAll()?",
+    "slug": "difference-between-queryselector-and-queryselectorall",
+    "answer": "querySelector() returns the first element that matches a specified CSS selector, whereas querySelectorAll() returns a static NodeList containing all matching elements. Use querySelector() when only one element is needed and querySelectorAll() when multiple matching elements need to be processed."
+  },
+  {
+    "id": 125,
+    "question": "How do you select elements by class name?",
+    "slug": "how-to-select-elements-by-class-name",
+    "answer": "Elements can be selected by class name using getElementsByClassName() or querySelectorAll(). getElementsByClassName() returns a live HTMLCollection, while querySelectorAll() returns a static NodeList and supports more advanced CSS selectors. In modern JavaScript, querySelectorAll() is often preferred for its flexibility."
+  },
+  {
+    "id": 126,
+    "question": "How do you create elements dynamically?",
+    "slug": "how-to-create-elements-dynamically",
+    "answer": "Elements can be created dynamically using the document.createElement() method. After creating the element, developers can set attributes, add content, apply styles, and insert it into the DOM using methods such as appendChild() or append(). This technique is widely used for rendering dynamic content and user interfaces."
+  },
+  {
+    "id": 127,
+    "question": "What is appendChild()?",
+    "slug": "what-is-appendchild",
+    "answer": "appendChild() is a DOM method used to add a node as the last child of a specified parent element. If the node already exists elsewhere in the DOM, it is moved rather than duplicated. This method is commonly used when dynamically creating and inserting elements into a web page."
+  },
+  {
+    "id": 128,
+    "question": "What is removeChild()?",
+    "slug": "what-is-removechild",
+    "answer": "removeChild() is a DOM method used to remove a child node from its parent element. The method returns the removed node, allowing it to be reused or stored if necessary. It is commonly used for deleting dynamically generated content from the page."
+  },
+  {
+    "id": 129,
+    "question": "What is innerHTML?",
+    "slug": "what-is-innerhtml",
+    "answer": "innerHTML is a property that gets or sets the HTML content inside an element. It allows developers to insert HTML markup dynamically, including nested elements. While powerful and convenient, excessive use of innerHTML can introduce security risks such as Cross-Site Scripting (XSS) if untrusted content is inserted."
+  },
+  {
+    "id": 130,
+    "question": "What is textContent?",
+    "slug": "what-is-textcontent",
+    "answer": "textContent is a property used to get or set the plain text content of an element and all its descendants. Unlike innerHTML, it does not interpret HTML tags and treats them as regular text. Because it does not parse HTML, textContent is generally safer and more performant when only text manipulation is required."
+  },
+   {
+    "id": 131,
+    "question": "What is innerText?",
+    "slug": "what-is-innertext",
+    "answer": "innerText is a DOM property used to get or set the visible text content of an element. Unlike textContent, it respects CSS styling and only returns text that is actually rendered on the page. Because it takes styles and layout into account, it can be slower than textContent for large DOM structures."
+  },
+  {
+    "id": 132,
+    "question": "How do you change CSS styles using JavaScript?",
+    "slug": "how-to-change-css-styles-using-javascript",
+    "answer": "CSS styles can be modified using the style property of a DOM element. JavaScript can update individual CSS properties, add or remove classes, or manipulate CSS custom properties. In modern applications, adding or removing CSS classes is generally preferred because it keeps styling separate from JavaScript logic."
+  },
+  {
+    "id": 133,
+    "question": "How do you add CSS classes dynamically?",
+    "slug": "how-to-add-css-classes-dynamically",
+    "answer": "CSS classes can be added dynamically using the classList.add() method. The classList API provides methods such as add(), remove(), toggle(), and contains() for managing classes efficiently. This approach is preferred over directly modifying className because it is more readable and less error-prone."
+  },
+  {
+    "id": 134,
+    "question": "What is classList?",
+    "slug": "what-is-classlist",
+    "answer": "classList is a DOM property that provides methods for managing an element's CSS classes. It allows developers to add, remove, toggle, replace, and check classes without manually manipulating strings. Using classList results in cleaner and more maintainable code when working with dynamic styling."
+  },
+  {
+    "id": 135,
+    "question": "What is the difference between innerHTML and textContent?",
+    "slug": "difference-between-innerhtml-and-textcontent",
+    "answer": "innerHTML works with HTML markup and can read or modify both text and HTML elements inside a node. textContent only works with plain text and does not interpret HTML tags. For security and performance reasons, textContent should be used when HTML parsing is not required, while innerHTML is appropriate when actual HTML content needs to be inserted or retrieved."
+  },
+  {
+    "id": 136,
+    "question": "What is DOM traversal?",
+    "slug": "what-is-dom-traversal",
+    "answer": "DOM traversal is the process of navigating between elements in the DOM tree. JavaScript provides properties and methods for moving to parent, child, and sibling nodes. DOM traversal is commonly used to locate related elements and manipulate document structures dynamically."
+  },
+  {
+    "id": 137,
+    "question": "What is parentNode?",
+    "slug": "what-is-parentnode",
+    "answer": "parentNode is a DOM property that returns the immediate parent node of a specified element. It is commonly used when traversing upward through the DOM tree or when modifications need to be made to an element's parent container."
+  },
+  {
+    "id": 138,
+    "question": "What is childNodes?",
+    "slug": "what-is-childnodes",
+    "answer": "childNodes is a DOM property that returns a live NodeList containing all child nodes of an element, including element nodes, text nodes, and comment nodes. Because it includes all node types, developers often use children when they need only element nodes."
+  },
+  {
+    "id": 139,
+    "question": "What is nextElementSibling?",
+    "slug": "what-is-nextelementsibling",
+    "answer": "nextElementSibling is a DOM property that returns the next sibling element of the current element. Unlike nextSibling, it ignores text nodes and comment nodes, making it more reliable when navigating between HTML elements in the DOM tree."
+  },
+  {
+    "id": 140,
+    "question": "What is previousElementSibling?",
+    "slug": "what-is-previouselementsibling",
+    "answer": "previousElementSibling is a DOM property that returns the previous sibling element of the current element. It ignores text and comment nodes and is commonly used when traversing backward through a group of related elements in the DOM."
+  },
+    {
+    "id": 141,
+    "question": "What is an event in JavaScript?",
+    "slug": "what-is-an-event-in-javascript",
+    "answer": "An event is an action or occurrence that happens in the browser and can be detected by JavaScript. Events may be triggered by user interactions such as clicks, key presses, form submissions, and mouse movements, or by browser actions such as page loading and network responses. JavaScript uses events to create interactive and responsive web applications."
+  },
+  {
+    "id": 142,
+    "question": "What is an event listener?",
+    "slug": "what-is-an-event-listener",
+    "answer": "An event listener is a function that waits for a specific event to occur on a target element and executes code when that event happens. Event listeners are commonly attached using the addEventListener() method, which provides a flexible and scalable way to handle user interactions."
+  },
+  {
+    "id": 143,
+    "question": "What is addEventListener()?",
+    "slug": "what-is-addeventlistener",
+    "answer": "addEventListener() is a method used to register an event handler on a DOM element. It allows multiple event listeners to be attached to the same event type without overwriting existing handlers. It is the preferred way to handle events in modern JavaScript because of its flexibility and support for event propagation options."
+  },
+  {
+    "id": 144,
+    "question": "What is the difference between onclick and addEventListener()?",
+    "slug": "difference-between-onclick-and-addeventlistener",
+    "answer": "The onclick property allows only one event handler for a specific event, and assigning a new handler replaces the existing one. addEventListener() allows multiple event handlers for the same event and provides additional features such as event capturing and removal of listeners. For these reasons, addEventListener() is generally preferred in modern applications."
+  },
+  {
+    "id": 145,
+    "question": "What is the event object?",
+    "slug": "what-is-the-event-object",
+    "answer": "The event object is automatically passed to an event handler when an event occurs. It contains information about the event, such as the event type, target element, mouse position, keyboard key pressed, and propagation details. The event object enables developers to respond intelligently to user interactions."
+  },
+  {
+    "id": 146,
+    "question": "What is event bubbling?",
+    "slug": "what-is-event-bubbling",
+    "answer": "Event bubbling is the default event propagation mechanism in which an event starts at the target element and then moves upward through its parent elements until it reaches the document root. This behavior allows parent elements to react to events triggered on their child elements and forms the basis of event delegation."
+  },
+  {
+    "id": 147,
+    "question": "What is event capturing?",
+    "slug": "what-is-event-capturing",
+    "answer": "Event capturing is an event propagation phase in which an event travels from the document root down to the target element before reaching the target itself. It occurs before the bubbling phase and can be enabled by passing the appropriate option to addEventListener()."
+  },
+  {
+    "id": 148,
+    "question": "What is the difference between event bubbling and event capturing?",
+    "slug": "difference-between-event-bubbling-and-event-capturing",
+    "answer": "In event bubbling, the event flows from the target element upward to its ancestors. In event capturing, the event flows from the top-level ancestor down to the target element. Bubbling is the default behavior in JavaScript, while capturing must be explicitly enabled when registering an event listener."
+  },
+  {
+    "id": 149,
+    "question": "What is stopPropagation()?",
+    "slug": "what-is-stoppropagation",
+    "answer": "stopPropagation() is a method of the event object that prevents an event from continuing its propagation through the DOM tree. When called, the event stops moving through either the bubbling or capturing phases, preventing parent or ancestor event handlers from being triggered."
+  },
+  {
+    "id": 150,
+    "question": "What is preventDefault()?",
+    "slug": "what-is-preventdefault",
+    "answer": "preventDefault() is a method used to stop the browser's default behavior associated with an event. For example, it can prevent a form from submitting, stop a link from navigating, or disable other built-in browser actions. It is commonly used when implementing custom functionality in web applications."
+  },
+    {
+    "id": 151,
+    "question": "What are template literals?",
+    "slug": "what-are-template-literals",
+    "answer": "Template literals are string literals introduced in ES6 that allow embedded expressions using backticks (` `). They support multi-line strings and interpolation using ${expression}, making string creation more readable and powerful compared to traditional string concatenation."
+  },
+  {
+    "id": 152,
+    "question": "What is destructuring in JavaScript?",
+    "slug": "what-is-destructuring-in-javascript",
+    "answer": "Destructuring is an ES6 feature that allows unpacking values from arrays or properties from objects into separate variables in a concise way. It improves readability and reduces repetitive code when accessing data structures."
+  },
+  {
+    "id": 153,
+    "question": "What are default parameters?",
+    "slug": "what-are-default-parameters",
+    "answer": "Default parameters allow functions to have predefined values for parameters if no argument or undefined is passed. This helps prevent undefined values and makes functions more flexible and safer to use."
+  },
+  {
+    "id": 154,
+    "question": "What are modules in JavaScript?",
+    "slug": "what-are-modules-in-javascript",
+    "answer": "Modules are reusable pieces of code that are separated into different files. They help organize code, improve maintainability, and allow importing and exporting functionality between files using ES6 module syntax."
+  },
+  {
+    "id": 155,
+    "question": "What is import and export?",
+    "slug": "what-is-import-and-export",
+    "answer": "Import and export are ES6 module features used to share code between files. Export is used to expose variables, functions, or classes from a module, while import is used to bring them into another file."
+  },
+  {
+    "id": 156,
+    "question": "What are named exports?",
+    "slug": "what-are-named-exports",
+    "answer": "Named exports allow multiple values to be exported from a module using their specific names. They must be imported using the same names inside curly braces."
+  },
+  {
+    "id": 157,
+    "question": "What are default exports?",
+    "slug": "what-are-default-exports",
+    "answer": "Default exports allow a module to export a single value as the default export. It can be imported with any name without using curly braces."
+  },
+  {
+    "id": 158,
+    "question": "What is the spread operator?",
+    "slug": "what-is-the-spread-operator",
+    "answer": "The spread operator (...) is used to expand elements of an array or properties of an object. It is commonly used for copying, merging arrays/objects, and passing arguments."
+  },
+  {
+    "id": 159,
+    "question": "What is the rest operator?",
+    "slug": "what-is-the-rest-operator",
+    "answer": "The rest operator (...) collects multiple elements into a single array or object. It is used in function parameters to handle variable number of arguments."
+  },
+  {
+    "id": 160,
+    "question": "What is optional chaining?",
+    "slug": "what-is-optional-chaining",
+    "answer": "Optional chaining (?.) is used to safely access deeply nested object properties without causing errors if a reference is null or undefined. It returns undefined instead of throwing an error."
+  },
+    {
+    "id": 161,
+    "question": "What is nullish coalescing?",
+    "slug": "what-is-nullish-coalescing",
+    "answer": "Nullish coalescing (??) is an operator that returns the right-hand value only when the left-hand value is null or undefined. It is useful for setting default values without treating falsy values like 0 or '' as invalid."
+  },
+  {
+    "id": 162,
+    "question": "What are sets in JavaScript?",
+    "slug": "what-are-sets-in-javascript",
+    "answer": "A Set is a built-in JavaScript object that stores unique values of any type. It automatically removes duplicates and provides methods like add, delete, and has for managing values efficiently."
+  },
+  {
+    "id": 163,
+    "question": "What are maps in JavaScript?",
+    "slug": "what-are-maps-in-javascript",
+    "answer": "A Map is a collection of key-value pairs where keys can be of any type, including objects. It maintains insertion order and provides methods like set, get, has, and delete for efficient data management."
+  },
+  {
+    "id": 164,
+    "question": "What is a WeakMap?",
+    "slug": "what-is-a-weakmap",
+    "answer": "A WeakMap is a special type of Map where keys must be objects and are held weakly. If there are no other references to the key object, it can be garbage collected, making WeakMap useful for memory-sensitive caching."
+  },
+  {
+    "id": 165,
+    "question": "What is a WeakSet?",
+    "slug": "what-is-a-weakset",
+    "answer": "A WeakSet is a collection of objects where each object must be unique and held weakly. It does not prevent garbage collection and only allows objects as values, not primitives."
+  },
+  {
+    "id": 166,
+    "question": "What is Symbol?",
+    "slug": "what-is-symbol",
+    "answer": "A Symbol is a primitive data type introduced in ES6 that represents a unique and immutable value. It is often used to create unique object property keys and avoid naming conflicts."
+  },
+  {
+    "id": 167,
+    "question": "What is BigInt?",
+    "slug": "what-is-bigint",
+    "answer": "BigInt is a JavaScript data type used to represent integers larger than the Number type can safely handle. It allows arithmetic with very large numbers by appending 'n' to the number."
+  },
+  {
+    "id": 168,
+    "question": "What is an execution context?",
+    "slug": "what-is-an-execution-context",
+    "answer": "An execution context is the environment in which JavaScript code is evaluated and executed. It contains information like variables, functions, and the value of 'this' during execution."
+  },
+  {
+    "id": 169,
+    "question": "What is the global execution context?",
+    "slug": "what-is-the-global-execution-context",
+    "answer": "The global execution context is the default execution context created when a JavaScript program starts. It sets up the global object (window in browsers) and the 'this' keyword in the global scope."
+  },
+  {
+    "id": 170,
+    "question": "What is the function execution context?",
+    "slug": "what-is-the-function-execution-context",
+    "answer": "A function execution context is created whenever a function is called. It contains its own variable environment, arguments object, scope chain, and the value of 'this' specific to that function call."
+  },
+   {
+    "id": 171,
+    "question": "What is the execution stack?",
+    "slug": "what-is-the-execution-stack",
+    "answer": "The execution stack (call stack) is a data structure used by JavaScript to manage execution contexts. It follows the LIFO principle, where the most recently added function is executed first and removed after completion."
+  },
+  {
+    "id": 172,
+    "question": "What is the call stack?",
+    "slug": "what-is-the-call-stack",
+    "answer": "The call stack is a mechanism that keeps track of function calls in JavaScript. When a function is called, it is pushed onto the stack, and when it finishes execution, it is popped off."
+  },
+  {
+    "id": 173,
+    "question": "What is lexical scope?",
+    "slug": "what-is-lexical-scope",
+    "answer": "Lexical scope refers to how variable scope is determined by the physical placement of code in the source file. Inner functions can access variables of their outer functions based on where they are defined, not where they are called."
+  },
+  {
+    "id": 174,
+    "question": "What is a closure?",
+    "slug": "what-is-a-closure",
+    "answer": "A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished execution. It allows data persistence and encapsulation in JavaScript."
+  },
+  {
+    "id": 175,
+    "question": "Why are closures useful?",
+    "slug": "why-are-closures-useful",
+    "answer": "Closures are useful because they enable data privacy, state preservation, function factories, and partial application. They help create modular and reusable code without exposing internal variables globally."
+  },
+  {
+    "id": 176,
+    "question": "What are practical uses of closures?",
+    "slug": "what-are-practical-uses-of-closures",
+    "answer": "Closures are used in data encapsulation, event handlers, currying, memoization, maintaining private variables, and implementing module patterns in JavaScript applications."
+  },
+  {
+    "id": 177,
+    "question": "What is hoisting?",
+    "slug": "what-is-hoisting",
+    "answer": "Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope during compilation. However, only declarations are hoisted, not initializations."
+  },
+  {
+    "id": 178,
+    "question": "What is the 'this' keyword?",
+    "slug": "what-is-the-this-keyword",
+    "answer": "The 'this' keyword refers to the object that is currently executing the code. Its value depends on how a function is called, not where it is defined."
+  },
+  {
+    "id": 179,
+    "question": "How does 'this' work in a regular function?",
+    "slug": "how-does-this-work-in-a-regular-function",
+    "answer": "In a regular function, the value of 'this' depends on the call context. In non-strict mode, it refers to the global object, while in strict mode it is undefined."
+  },
+  {
+    "id": 180,
+    "question": "How does 'this' work in an arrow function?",
+    "slug": "how-does-this-work-in-an-arrow-function",
+    "answer": "In arrow functions, 'this' is lexically bound, meaning it inherits 'this' from the surrounding scope. It does not have its own 'this' value, unlike regular functions."
+  },
+   {
+    "id": 181,
+    "question": "What is explicit binding?",
+    "slug": "what-is-explicit-binding",
+    "answer": "Explicit binding is a way to manually set the value of 'this' using methods like call(), apply(), or bind(). It allows developers to control the execution context of a function."
+  },
+  {
+    "id": 182,
+    "question": "What is implicit binding?",
+    "slug": "what-is-implicit-binding",
+    "answer": "Implicit binding occurs when a function is called as a method of an object. In this case, 'this' automatically refers to the object before the dot."
+  },
+  {
+    "id": 183,
+    "question": "What is call()?",
+    "slug": "what-is-call",
+    "answer": "The call() method is used to invoke a function with a specified 'this' value and arguments passed individually. It allows function borrowing and explicit context setting."
+  },
+  {
+    "id": 184,
+    "question": "What is apply()?",
+    "slug": "what-is-apply",
+    "answer": "The apply() method is similar to call(), but it passes arguments as an array instead of individual values. It is useful when working with dynamic arguments."
+  },
+  {
+    "id": 185,
+    "question": "What is bind()?",
+    "slug": "what-is-bind",
+    "answer": "The bind() method returns a new function with a permanently bound 'this' value. Unlike call() and apply(), it does not execute the function immediately."
+  },
+  {
+    "id": 186,
+    "question": "What is the difference between call(), apply(), and bind()?",
+    "slug": "difference-between-call-apply-bind",
+    "answer": "call() and apply() immediately invoke the function with a specified 'this', but apply() takes arguments as an array. bind() returns a new function with bound 'this' and does not execute immediately."
+  },
+  {
+    "id": 187,
+    "question": "What is function borrowing using call()?",
+    "slug": "what-is-function-borrowing-using-call",
+    "answer": "Function borrowing using call() allows one object to use a method from another object by explicitly setting its 'this' value, enabling code reuse without duplication."
+  },
+  {
+    "id": 188,
+    "question": "What is synchronous programming?",
+    "slug": "what-is-synchronous-programming",
+    "answer": "Synchronous programming executes code line by line, blocking the next operation until the current one finishes. It is simple but can cause delays if a task takes too long."
+  },
+  {
+    "id": 189,
+    "question": "What is asynchronous programming?",
+    "slug": "what-is-asynchronous-programming",
+    "answer": "Asynchronous programming allows tasks to run independently without blocking the main thread. It improves performance and responsiveness by using callbacks, promises, or async/await."
+  },
+  {
+    "id": 190,
+    "question": "What is the JavaScript Event Loop?",
+    "slug": "what-is-the-javascript-event-loop",
+    "answer": "The Event Loop is a mechanism that allows JavaScript to perform non-blocking operations. It continuously checks the call stack and callback queues to execute asynchronous tasks when the stack is empty."
+  },
+   {
+    "id": 191,
+    "question": "How does the Event Loop work?",
+    "slug": "how-does-the-event-loop-work",
+    "answer": "The Event Loop continuously monitors the call stack and callback queues. When the call stack is empty, it pushes tasks from the microtask queue first, then from the task (macrotask) queue, enabling asynchronous execution in JavaScript."
+  },
+  {
+    "id": 192,
+    "question": "What are Web APIs?",
+    "slug": "what-are-web-apis",
+    "answer": "Web APIs are browser-provided features like setTimeout, DOM events, fetch, and local storage. They handle asynchronous operations outside the JavaScript engine and interact with the Event Loop."
+  },
+  {
+    "id": 193,
+    "question": "What is the Callback Queue?",
+    "slug": "what-is-the-callback-queue",
+    "answer": "The Callback Queue (Task Queue) is where callback functions from asynchronous operations like setTimeout or DOM events are stored before being executed by the Event Loop."
+  },
+  {
+    "id": 194,
+    "question": "What is the Task Queue?",
+    "slug": "what-is-the-task-queue",
+    "answer": "The Task Queue is another name for the macrotask queue where tasks like setTimeout, setInterval, and UI events are queued before execution."
+  },
+  {
+    "id": 195,
+    "question": "What is the Microtask Queue?",
+    "slug": "what-is-the-microtask-queue",
+    "answer": "The Microtask Queue stores high-priority tasks such as Promise callbacks and mutation observers. Microtasks are executed immediately after the current execution context and before macrotasks."
+  },
+  {
+    "id": 196,
+    "question": "What is the difference between Microtask Queue and Task Queue?",
+    "slug": "difference-between-microtask-and-task-queue",
+    "answer": "Microtask Queue has higher priority and includes Promises and mutation observers, while Task Queue (macrotask) includes setTimeout and events. Microtasks are executed before macrotasks after the call stack is empty."
+  },
+  {
+    "id": 197,
+    "question": "Which executes first: Microtasks or Macrotasks?",
+    "slug": "which-executes-first-microtasks-or-macrotasks",
+    "answer": "Microtasks execute first. After the call stack is empty, all microtasks are executed before any macrotasks are processed by the Event Loop."
+  },
+  {
+    "id": 198,
+    "question": "What are Macrotasks?",
+    "slug": "what-are-macrotasks",
+    "answer": "Macrotasks are larger asynchronous tasks like setTimeout, setInterval, I/O operations, and UI rendering events. They are executed after microtasks are completed."
+  },
+  {
+    "id": 199,
+    "question": "What are examples of Microtasks?",
+    "slug": "what-are-examples-of-microtasks",
+    "answer": "Examples of microtasks include Promise.then(), Promise.catch(), Promise.finally(), and MutationObserver callbacks. These run before any macrotask."
+  },
+  {
+    "id": 200,
+    "question": "What are examples of Macrotasks?",
+    "slug": "what-are-examples-of-macrotasks",
+    "answer": "Examples of macrotasks include setTimeout, setInterval, setImmediate (Node.js), UI rendering tasks, and I/O events. They are executed after microtasks."
+  },
+   {
+    "id": 201,
+    "question": "What is setTimeout()?",
+    "slug": "what-is-settimeout",
+    "answer": "setTimeout() is a Web API function used to execute a callback function after a specified delay in milliseconds. It is used for scheduling asynchronous tasks."
+  },
+  {
+    "id": 202,
+    "question": "What is setInterval()?",
+    "slug": "what-is-setinterval",
+    "answer": "setInterval() is a Web API function that repeatedly executes a callback function at a fixed time interval in milliseconds until it is stopped."
+  },
+  {
+    "id": 203,
+    "question": "What is clearTimeout()?",
+    "slug": "what-is-cleartimeout",
+    "answer": "clearTimeout() is used to cancel a timeout that was previously set using setTimeout(). It prevents the scheduled function from executing."
+  },
+  {
+    "id": 204,
+    "question": "What is clearInterval()?",
+    "slug": "what-is-clearinterval",
+    "answer": "clearInterval() is used to stop a repeating interval that was created using setInterval(), preventing further executions."
+  },
+  {
+    "id": 205,
+    "question": "Why does setTimeout(fn, 0) not execute immediately?",
+    "slug": "why-settimeout-zero-delay-not-immediate",
+    "answer": "setTimeout(fn, 0) does not execute immediately because the callback is placed in the macrotask queue. It only runs after the current call stack and all microtasks are completed."
+  },
+  {
+    "id": 206,
+    "question": "How does asynchronous code execute in JavaScript?",
+    "slug": "how-does-asynchronous-code-execute-in-javascript",
+    "answer": "Asynchronous code is handled using Web APIs, which offload tasks like timers and network requests. Once completed, callbacks are placed into queues and executed by the Event Loop when the call stack is empty."
+  },
+  {
+    "id": 207,
+    "question": "What happens when the call stack becomes empty?",
+    "slug": "what-happens-when-call-stack-is-empty",
+    "answer": "When the call stack becomes empty, the Event Loop checks the microtask queue first and executes all microtasks, then processes macrotasks from the task queue."
+  },
+  {
+    "id": 208,
+    "question": "What is a Promise?",
+    "slug": "what-is-a-promise",
+    "answer": "A Promise is an object that represents the eventual completion or failure of an asynchronous operation. It helps manage async code more cleanly than callbacks."
+  },
+  {
+    "id": 209,
+    "question": "What problem do Promises solve?",
+    "slug": "what-problem-do-promises-solve",
+    "answer": "Promises solve callback hell and improve readability by allowing chaining of asynchronous operations and better error handling using .then(), .catch(), and .finally()."
+  },
+  {
+    "id": 210,
+    "question": "What are the states of a Promise?",
+    "slug": "what-are-the-states-of-a-promise",
+    "answer": "A Promise has three states: pending (initial state), fulfilled (operation completed successfully), and rejected (operation failed)."
+  },
+    {
+    "id": 211,
+    "question": "What is a pending Promise?",
+    "slug": "what-is-a-pending-promise",
+    "answer": "A pending Promise is the initial state of a Promise where the asynchronous operation has not yet completed or failed. It is waiting for either fulfillment or rejection."
+  },
+  {
+    "id": 212,
+    "question": "What is a fulfilled Promise?",
+    "slug": "what-is-a-fulfilled-promise",
+    "answer": "A fulfilled Promise is a state where the asynchronous operation has completed successfully and returns a resolved value."
+  },
+  {
+    "id": 213,
+    "question": "What is a rejected Promise?",
+    "slug": "what-is-a-rejected-promise",
+    "answer": "A rejected Promise is a state where the asynchronous operation has failed and returns a reason or error explaining the failure."
+  },
+  {
+    "id": 214,
+    "question": "What is Promise chaining?",
+    "slug": "what-is-promise-chaining",
+    "answer": "Promise chaining is the process of linking multiple .then() calls together to perform sequential asynchronous operations in a readable and structured way."
+  },
+  {
+    "id": 215,
+    "question": "What is the then() method?",
+    "slug": "what-is-the-then-method",
+    "answer": "The then() method is used to handle the successful result of a Promise. It takes a callback function that receives the resolved value."
+  },
+  {
+    "id": 216,
+    "question": "What is the catch() method?",
+    "slug": "what-is-the-catch-method",
+    "answer": "The catch() method is used to handle errors or rejected Promises. It executes when a Promise is rejected or an error occurs in the chain."
+  },
+  {
+    "id": 217,
+    "question": "What is the finally() method?",
+    "slug": "what-is-the-finally-method",
+    "answer": "The finally() method runs after a Promise is settled, regardless of whether it was fulfilled or rejected. It is commonly used for cleanup tasks."
+  },
+  {
+    "id": 218,
+    "question": "What is Promise.all()?",
+    "slug": "what-is-promise-all",
+    "answer": "Promise.all() takes multiple Promises and returns a single Promise that resolves when all input Promises are fulfilled, or rejects if any one fails."
+  },
+  {
+    "id": 219,
+    "question": "What is Promise.allSettled()?",
+    "slug": "what-is-promise-allsettled",
+    "answer": "Promise.allSettled() waits for all Promises to complete and returns an array of results describing whether each Promise was fulfilled or rejected."
+  },
+  {
+    "id": 220,
+    "question": "What is Promise.race()?",
+    "slug": "what-is-promise-race",
+    "answer": "Promise.race() returns a Promise that resolves or rejects as soon as the first Promise in the iterable settles, regardless of its outcome."
+  },
+   {
+    "id": 221,
+    "question": "What is Promise.any()?",
+    "slug": "what-is-promise-any",
+    "answer": "Promise.any() takes multiple Promises and returns the first fulfilled Promise. If all Promises are rejected, it returns an AggregateError."
+  },
+  {
+    "id": 222,
+    "question": "What is async/await?",
+    "slug": "what-is-async-await",
+    "answer": "async/await is syntactic sugar built on Promises that allows writing asynchronous code in a synchronous style, making it easier to read and maintain."
+  },
+  {
+    "id": 223,
+    "question": "How does async work?",
+    "slug": "how-does-async-work",
+    "answer": "The async keyword is used before a function to make it return a Promise automatically. It allows the use of await inside the function."
+  },
+  {
+    "id": 224,
+    "question": "How does await work?",
+    "slug": "how-does-await-work",
+    "answer": "The await keyword pauses the execution of an async function until the Promise is resolved or rejected, and then resumes execution with the result."
+  },
+  {
+    "id": 225,
+    "question": "Can await be used outside an async function?",
+    "slug": "can-await-be-used-outside-an-async-function",
+    "answer": "In traditional JavaScript, await can only be used inside async functions. However, in modern ES modules, top-level await is allowed."
+  },
+  {
+    "id": 226,
+    "question": "How do you handle errors with async/await?",
+    "slug": "how-do-you-handle-errors-with-async-await",
+    "answer": "Errors in async/await are handled using try...catch blocks, where the try block contains the async code and catch handles any thrown errors."
+  },
+  {
+    "id": 227,
+    "question": "What is the difference between Promises and async/await?",
+    "slug": "difference-between-promises-and-async-await",
+    "answer": "Promises use then/catch chaining, while async/await provides a cleaner, synchronous-like syntax for handling asynchronous code. Both are built on the same underlying concept."
+  },
+  {
+    "id": 228,
+    "question": "What is the Fetch API?",
+    "slug": "what-is-the-fetch-api",
+    "answer": "The Fetch API is a modern JavaScript interface used to make HTTP requests. It returns a Promise that resolves to the response of the request."
+  },
+  {
+    "id": 229,
+    "question": "How do you make a GET request using fetch()?",
+    "slug": "how-do-you-make-a-get-request-using-fetch",
+    "answer": "A GET request using fetch() is made by calling fetch(url), which returns a Promise. The response is then converted to JSON or text using response methods."
+  },
+  {
+    "id": 230,
+    "question": "How do you make a POST request using fetch()?",
+    "slug": "how-do-you-make-a-post-request-using-fetch",
+    "answer": "A POST request using fetch() is made by passing an options object with method: 'POST', headers, and a body containing JSON-stringified data."
+  },
+   {
+    "id": 231,
+    "question": "What does response.json() do?",
+    "slug": "what-does-response-json-do",
+    "answer": "response.json() is a method used in the Fetch API to parse the response body as JSON. It returns a Promise that resolves to a JavaScript object."
+  },
+  {
+    "id": 232,
+    "question": "How do you send JSON data using fetch()?",
+    "slug": "how-do-you-send-json-data-using-fetch",
+    "answer": "To send JSON data using fetch(), you set method to POST, add 'Content-Type: application/json' in headers, and pass JSON.stringify(data) in the body."
+  },
+  {
+    "id": 233,
+    "question": "How do you handle errors in fetch()?",
+    "slug": "how-do-you-handle-errors-in-fetch",
+    "answer": "Errors in fetch() are handled by checking response.ok or status codes, and using catch() to handle network failures. Fetch does not automatically reject for HTTP errors."
+  },
+  {
+    "id": 234,
+    "question": "What is the Response object?",
+    "slug": "what-is-the-response-object",
+    "answer": "The Response object represents the result of a fetch request. It contains information like status, headers, and methods such as json(), text(), and blob()."
+  },
+  {
+    "id": 235,
+    "question": "What are HTTP methods?",
+    "slug": "what-are-http-methods",
+    "answer": "HTTP methods define actions to be performed on a resource. Common methods include GET (retrieve data), POST (create data), PUT (update data), and DELETE (remove data)."
+  },
+  {
+    "id": 236,
+    "question": "What is the difference between GET and POST?",
+    "slug": "difference-between-get-and-post",
+    "answer": "GET is used to retrieve data and sends parameters in the URL, while POST is used to send data to the server in the request body, often used for creating or updating resources."
+  },
+  {
+    "id": 237,
+    "question": "What are HTTP status codes?",
+    "slug": "what-are-http-status-codes",
+    "answer": "HTTP status codes are numeric responses from a server that indicate the result of a request. Examples include 200 (OK), 404 (Not Found), and 500 (Server Error)."
+  },
+  {
+    "id": 238,
+    "question": "What is JSON?",
+    "slug": "what-is-json",
+    "answer": "JSON (JavaScript Object Notation) is a lightweight data format used for storing and exchanging data. It is easy to read and widely used in APIs."
+  },
+  {
+    "id": 239,
+    "question": "What is the difference between JSON and JavaScript objects?",
+    "slug": "difference-between-json-and-javascript-objects",
+    "answer": "JSON is a string format used for data exchange, while JavaScript objects are in-memory data structures. JSON keys must be in double quotes, whereas JS objects do not require them."
+  },
+  {
+    "id": 240,
+    "question": "What is JSON.stringify()?",
+    "slug": "what-is-json-stringify",
+    "answer": "JSON.stringify() converts a JavaScript object into a JSON string, making it suitable for sending data over a network or storing it."
+  },
+  {
+    "id": 241,
+    "question": "Why do we use JSON.stringify()?",
+    "slug": "why-do-we-use-json-stringify",
+    "answer": "JSON.stringify() is used to convert JavaScript objects into JSON strings so they can be sent over a network or stored in systems like localStorage or databases."
+  },
+  {
+    "id": 242,
+    "question": "What is JSON.parse()?",
+    "slug": "what-is-json-parse",
+    "answer": "JSON.parse() is used to convert a JSON string into a JavaScript object so it can be used and manipulated in code."
+  },
+  {
+    "id": 243,
+    "question": "Why do we use JSON.parse()?",
+    "slug": "why-do-we-use-json-parse",
+    "answer": "JSON.parse() is used to transform received JSON data into a usable JavaScript object format, especially when working with APIs or stored data."
+  },
+  {
+    "id": 244,
+    "question": "How do you convert an object into JSON?",
+    "slug": "how-do-you-convert-an-object-into-json",
+    "answer": "An object is converted into JSON using JSON.stringify(), which serializes the object into a JSON-formatted string."
+  },
+  {
+    "id": 245,
+    "question": "How do you convert JSON into an object?",
+    "slug": "how-do-you-convert-json-into-an-object",
+    "answer": "JSON is converted into a JavaScript object using JSON.parse(), which deserializes the JSON string into a usable object."
+  },
+  {
+    "id": 246,
+    "question": "What happens when invalid JSON is passed to JSON.parse()?",
+    "slug": "what-happens-when-invalid-json-is-passed-to-json-parse",
+    "answer": "If invalid JSON is passed to JSON.parse(), it throws a SyntaxError, which must be handled using try...catch to prevent application crashes."
+  },
+  {
+    "id": 247,
+    "question": "What are the limitations of JSON?",
+    "slug": "what-are-the-limitations-of-json",
+    "answer": "JSON does not support functions, undefined values, or complex data types like Date without conversion. It also does not allow comments and has strict syntax rules."
+  },
+  {
+    "id": 248,
+    "question": "What is Local Storage?",
+    "slug": "what-is-local-storage",
+    "answer": "Local Storage is a web storage mechanism that allows storing key-value pairs in the browser with no expiration time. Data persists even after the browser is closed."
+  },
+  {
+    "id": 249,
+    "question": "What is Session Storage?",
+    "slug": "what-is-session-storage",
+    "answer": "Session Storage stores data in the browser for a single session. The data is cleared when the browser tab or window is closed."
+  },
+  {
+    "id": 250,
+    "question": "What is Web Storage?",
+    "slug": "what-is-web-storage",
+    "answer": "Web Storage is a browser API that includes Local Storage and Session Storage, allowing developers to store data on the client side in a simple key-value format."
+  },
+   {
+    "id": 251,
+    "question": "What is the difference between Local Storage and Session Storage?",
+    "slug": "difference-between-local-storage-and-session-storage",
+    "answer": "Local Storage persists data even after the browser is closed, while Session Storage clears data when the browser tab or window is closed. Both store data as key-value pairs in the browser."
+  },
+  {
+    "id": 252,
+    "question": "How do you store data in Local Storage?",
+    "slug": "how-do-you-store-data-in-local-storage",
+    "answer": "Data is stored in Local Storage using localStorage.setItem(key, value). The value must be a string, so objects are usually converted using JSON.stringify()."
+  },
+  {
+    "id": 253,
+    "question": "How do you retrieve data from Local Storage?",
+    "slug": "how-do-you-retrieve-data-from-local-storage",
+    "answer": "Data is retrieved from Local Storage using localStorage.getItem(key), which returns the stored string value or null if the key does not exist."
+  },
+  {
+    "id": 254,
+    "question": "How do you remove data from Local Storage?",
+    "slug": "how-do-you-remove-data-from-local-storage",
+    "answer": "Data is removed from Local Storage using localStorage.removeItem(key), which deletes the specific key-value pair from storage."
+  },
+  {
+    "id": 255,
+    "question": "How do you clear Local Storage?",
+    "slug": "how-do-you-clear-local-storage",
+    "answer": "Local Storage is cleared using localStorage.clear(), which removes all key-value pairs stored in the browser for that origin."
+  },
+  {
+    "id": 256,
+    "question": "Why do we use JSON.stringify() with Local Storage?",
+    "slug": "why-do-we-use-json-stringify-with-local-storage",
+    "answer": "We use JSON.stringify() with Local Storage because it only stores strings. Objects must be converted into strings before saving."
+  },
+  {
+    "id": 257,
+    "question": "Why do we use JSON.parse() with Local Storage?",
+    "slug": "why-do-we-use-json-parse-with-local-storage",
+    "answer": "We use JSON.parse() with Local Storage to convert stored JSON strings back into JavaScript objects for easier manipulation."
+  },
+  {
+    "id": 258,
+    "question": "What are cookies?",
+    "slug": "what-are-cookies",
+    "answer": "Cookies are small pieces of data stored in the browser and sent to the server with every HTTP request. They are used for session management, tracking, and personalization."
+  },
+  {
+    "id": 259,
+    "question": "What is the difference between Cookies, Local Storage, and Session Storage?",
+    "slug": "difference-between-cookies-local-storage-session-storage",
+    "answer": "Cookies are sent with every HTTP request and have limited storage size. Local Storage persists indefinitely until cleared. Session Storage persists only for a session and is cleared when the tab is closed."
+  },
+  {
+    "id": 260,
+    "question": "What is debouncing?",
+    "slug": "what-is-debouncing",
+    "answer": "Debouncing is a performance optimization technique where a function is executed only after a certain delay has passed since the last event, commonly used in search inputs and resize events."
+  },
+    {
+    "id": 261,
+    "question": "What is throttling?",
+    "slug": "what-is-throttling",
+    "answer": "Throttling is a performance optimization technique that limits how often a function can be executed over time. It ensures the function runs at most once in a specified interval, commonly used in scroll or resize events."
+  },
+  {
+    "id": 262,
+    "question": "What is memory leakage in JavaScript?",
+    "slug": "what-is-memory-leakage-in-javascript",
+    "answer": "Memory leakage occurs when memory that is no longer needed is not released, causing increased memory usage over time. It can lead to performance issues and slow applications."
+  },
+  {
+    "id": 263,
+    "question": "What is reflow?",
+    "slug": "what-is-reflow",
+    "answer": "Reflow is the process where the browser recalculates the layout of elements in the DOM after changes like resizing, adding, or removing elements. It can be performance expensive."
+  },
+  {
+    "id": 264,
+    "question": "What is repaint?",
+    "slug": "what-is-repaint",
+    "answer": "Repaint occurs when the browser updates the visual appearance of an element without changing its layout, such as color or background changes."
+  },
+  {
+    "id": 265,
+    "question": "What is lazy loading?",
+    "slug": "what-is-lazy-loading",
+    "answer": "Lazy loading is a performance optimization technique where resources like images or scripts are loaded only when they are needed, improving initial page load time."
+  },
+  {
+    "id": 266,
+    "question": "What is event delegation used for performance optimization?",
+    "slug": "what-is-event-delegation",
+    "answer": "Event delegation is a technique where a single event listener is attached to a parent element instead of multiple child elements, improving performance and reducing memory usage."
+  },
+  {
+    "id": 267,
+    "question": "How can you optimize JavaScript code for better performance?",
+    "slug": "how-to-optimize-javascript-performance",
+    "answer": "JavaScript performance can be optimized by minimizing DOM manipulation, using debouncing and throttling, avoiding memory leaks, using efficient loops, and reducing unnecessary computations."
+  },
+  {
+    "id": 268,
+    "question": "Predict the output of code involving var hoisting",
+    "slug": "predict-output-var-hoisting",
+    "answer": "With var hoisting, variable declarations are moved to the top but not the initialization. So accessing a var variable before assignment returns undefined instead of throwing an error."
+  },
+  {
+    "id": 269,
+    "question": "Predict the output of code involving let and TDZ",
+    "slug": "predict-output-let-tdz",
+    "answer": "Variables declared with let are hoisted but remain in the Temporal Dead Zone until initialized. Accessing them before declaration results in a ReferenceError."
+  },
+  {
+    "id": 270,
+    "question": "Predict the output of closure-based code",
+    "slug": "predict-output-closure-code",
+    "answer": "Closure-based code retains access to variables from its outer function even after execution, so the output depends on the preserved lexical environment, not just the immediate execution context."
+  },
+    {
+    "id": 271,
+    "question": "Predict the output involving call(), apply(), and bind()",
+    "slug": "predict-output-call-apply-bind",
+    "answer": "The output depends on how 'this' is explicitly set. call() and apply() immediately invoke the function with a specified 'this', while bind() returns a new function with bound context, which must be invoked separately to produce output."
+  },
+  {
+    "id": 272,
+    "question": "Predict the output involving arrow functions and this",
+    "slug": "predict-output-arrow-functions-this",
+    "answer": "Arrow functions do not have their own 'this'. They inherit 'this' from the surrounding lexical scope, so the output depends on the enclosing context where the arrow function is defined."
+  },
+  {
+    "id": 273,
+    "question": "Predict the output involving Promises",
+    "slug": "predict-output-promises",
+    "answer": "Promise output depends on execution order of microtasks. .then() callbacks run asynchronously after the current synchronous code, so the output often appears after synchronous logs."
+  },
+  {
+    "id": 274,
+    "question": "Predict the output involving async/await",
+    "slug": "predict-output-async-await",
+    "answer": "async/await pauses execution inside async functions until the Promise resolves. However, the rest of the code outside the async function continues executing first due to the Event Loop."
+  },
+  {
+    "id": 275,
+    "question": "Predict the output involving setTimeout()",
+    "slug": "predict-output-settimeout",
+    "answer": "setTimeout callbacks execute after the specified delay, but only after the call stack is empty and all microtasks are completed, so execution is not immediate even with zero delay."
+  },
+  {
+    "id": 276,
+    "question": "Predict the output involving Microtasks and Macrotasks",
+    "slug": "predict-output-microtasks-macrotasks",
+    "answer": "Microtasks (like Promises) always execute before macrotasks (like setTimeout), so microtask outputs appear first even if macrotasks are scheduled earlier."
+  },
+  {
+    "id": 277,
+    "question": "Predict the output involving Event Loop execution order",
+    "slug": "predict-output-event-loop-order",
+    "answer": "Synchronous code runs first, then microtasks are executed, and finally macrotasks are processed. This order determines the final output sequence in event loop-based code."
+  },
+  {
+    "id": 278,
+    "question": "What is the difference between var, let, and const?",
+    "slug": "difference-between-var-let-const",
+    "answer": "var is function-scoped and hoisted with undefined initialization, let is block-scoped and in Temporal Dead Zone until declared, and const is block-scoped and cannot be reassigned after initialization."
+  },
+  {
+    "id": 279,
+    "question": "What is the Temporal Dead Zone (TDZ)?",
+    "slug": "what-is-temporal-dead-zone",
+    "answer": "The Temporal Dead Zone is the time between entering scope and variable declaration where variables declared with let and const cannot be accessed, resulting in a ReferenceError if accessed early."
+  },
+  {
+    "id": 280,
+    "question": "What are arithmetic operators?",
+    "slug": "what-are-arithmetic-operators",
+    "answer": "Arithmetic operators are used to perform mathematical operations on values, such as addition (+), subtraction (-), multiplication (*), division (/), modulus (%), and exponentiation (**)."
+  },
+    {
+    "id": 281,
+    "question": "Predict the output: console.log(a); var a = 10;",
+    "slug": "predict-output-var-hoisting-basic",
+    "answer": "Output: undefined. Explanation: var declarations are hoisted to the top of their scope, but initialization is not. So 'a' exists but is not yet assigned when logged."
+  },
+  {
+    "id": 282,
+    "question": "Predict the output: console.log(a); let a = 10;",
+    "slug": "predict-output-let-tdz-error",
+    "answer": "Output: ReferenceError: Cannot access 'a' before initialization. Explanation: let is hoisted but remains in the Temporal Dead Zone until it is declared."
+  },
+  {
+    "id": 283,
+    "question": "Predict the output: for(var i=0;i<3;i++){ setTimeout(()=>console.log(i),0) }",
+    "slug": "predict-output-var-loop-settimeout",
+    "answer": "Output: 3 3 3. Explanation: var is function-scoped, so all callbacks share the same 'i', which becomes 3 after the loop ends."
+  },
+  {
+    "id": 284,
+    "question": "Predict the output: for(let i=0;i<3;i++){ setTimeout(()=>console.log(i),0) }",
+    "slug": "predict-output-let-loop-settimeout",
+    "answer": "Output: 0 1 2. Explanation: let is block-scoped, so each iteration creates a new binding of 'i'."
+  },
+  {
+    "id": 285,
+    "question": "Predict the output: console.log(1); setTimeout(()=>console.log(2),0); Promise.resolve().then(()=>console.log(3)); console.log(4);",
+    "slug": "predict-output-event-loop-microtask-macrotask",
+    "answer": "Output: 1 4 3 2. Explanation: synchronous code runs first (1,4), then microtasks (Promise -> 3), then macrotasks (setTimeout -> 2)."
+  },
+  {
+    "id": 286,
+    "question": "Predict the output: console.log(typeof null);",
+    "slug": "predict-output-typeof-null",
+    "answer": "Output: object. Explanation: This is a long-standing JavaScript bug where typeof null incorrectly returns 'object'."
+  },
+  {
+    "id": 287,
+    "question": "Predict the output: [] + []",
+    "slug": "predict-output-empty-array-addition",
+    "answer": "Output: ''. Explanation: Arrays are converted to strings, both become empty strings, so result is string concatenation of empty values."
+  },
+  {
+    "id": 288,
+    "question": "Predict the output: [] + {}",
+    "slug": "predict-output-array-plus-object",
+    "answer": "Output: '[object Object]'. Explanation: [] becomes empty string and {} becomes '[object Object]' when coerced to string."
+  },
+  {
+    "id": 289,
+    "question": "Predict the output: {} + []",
+    "slug": "predict-output-object-plus-array",
+    "answer": "Output: 0 or '[object Object]'. Explanation: This depends on parsing context; in some cases {} is treated as block, resulting in +[] → 0."
+  },
+  {
+    "id": 290,
+    "question": "Predict the output: console.log(0 == false); console.log(0 === false);",
+    "slug": "predict-output-loose-vs-strict-equality",
+    "answer": "Output: true false. Explanation: == performs type coercion so 0 equals false, but === checks both value and type so they are not equal."
+  }
+]
