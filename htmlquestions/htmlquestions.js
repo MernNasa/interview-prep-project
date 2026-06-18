@@ -110,6 +110,8 @@ document
     .getElementById("toggleBtn")
     .addEventListener("click", toggleSidebar);
 
-
+document
+    .getElementById("close-sidebar")
+    .addEventListener("click", toggleSidebar);
 
 renderQuestion();
